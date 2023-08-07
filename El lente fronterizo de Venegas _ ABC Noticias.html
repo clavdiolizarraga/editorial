@@ -1,0 +1,2241 @@
+
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<style amp-custom>
+		/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,footer,header,nav,section{display:block}
+h1{font-size:2em;margin:.67em 0}
+figcaption,figure,main{display:block}
+figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0;overflow:visible}
+pre{font-family:monospace,monospace;font-size:1em}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:inherit;font-weight:bolder}
+code,kbd,samp{font-family:monospace,monospace;font-size:1em}
+dfn{font-style:italic}
+mark{background-color:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-.25em}
+sup{top:-.5em}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+img{border-style:none}
+svg:not(:root){overflow:hidden}
+button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}
+button,input{overflow:visible}
+button,select{text-transform:none}
+[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}
+[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
+progress{display:inline-block;vertical-align:baseline}
+textarea{overflow:auto}
+[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+details,menu{display:block}
+summary{display:list-item}
+canvas{display:inline-block}
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+/* ---------------------------- */
+
+/* UTILIDADES  =================== */
+
+
+
+
+
+
+
+.flex, .row-flex{display: flex; width: 100%; flex-wrap: wrap;}
+.row-flex{width: 100%;}
+.align-center{align-items: center;}
+.justify-sb{justify-content: space-between;}
+
+nav ul{list-style: none; padding: 0; margin: 0;}
+
+
+/* GENERICOS  =================== */
+
+a{color: #000;}
+p{margin:0 ;}
+
+body{
+   background: #fff;       
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+   min-width: 315px;
+   overflow-x: hidden;
+   color: #4a4a4a;   
+}
+
+.article-content--cuerpo ol,
+.article-content--cuerpo ul{
+  margin-left: 0;
+  padding-left: 1.4rem;
+}
+
+.article-content--cuerpo ol li,
+.article-content--cuerpo ul li{
+  padding-left: .3rem;
+  margin-bottom: .2rem;
+
+}
+
+/* LAYOUT =================== */
+
+
+.container,
+.main-container{
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;    
+}
+
+.container,
+.article-content--cuerpo{padding-left: 1rem; padding-right: 1rem;}
+
+.row{display: flex; width: 100%;}
+
+.col--main{flex: 1 75%; }
+.col--sidebar{flex: 0 0 336px; width:336px }
+
+@media screen and (min-width:768px){
+  .col--main{margin-right: 30px;}
+}
+
+.content-modulo .container{padding-top: 0; padding-bottom: 0;}
+
+
+.article-content--cuerpo .container{padding: 0;}
+
+
+
+
+/* Control de margenes =============== */
+
+/* banners */
+.bnn{margin-bottom: 1rem;}
+
+/* modulos */
+
+section.mod {
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+h2, h3, h4{margin-top: 0; margin-bottom: 1rem; line-height: 1em;}
+
+.article-content--cuerpo > h2{font-size: 1.27em; margin-bottom: 1rem; }/* varios body */
+.marker{background-color: yellow; font-weight: 400; color: #000;}
+
+
+/* BODY ===================== */
+
+.main-container{padding-top: 2rem;}
+
+@media screen and (max-width:768px){
+  .main-container{padding-top: calc(60px + 1.7rem);}
+}
+
+.main-article--header .antetitulo{font-size: 1em; font-weight: 400;}
+.main-article--header .titulo{font-size: 2em; line-height: 1em; margin:0; margin-bottom: .5rem;}
+.main-article--header .bajada{font-size: 1em;line-height: 1.3em; font-weight: 500; margin-bottom: 1rem;}
+
+
+
+/* foto principal */
+
+.main-photo {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.35);  
+}
+
+
+.main-photo .epigrafe{font-size: .7em; line-height: 1.1em; position: absolute; bottom: 0; left: 0; width: 100%; padding: .5rem; background-color: rgba(0, 0, 0, 0.308); color: #fff; display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;}
+.main-photo .epigrafe:empty{display: none;}
+.main-photo .epigrafe strong,
+.main-photo .epigrafe .desc{margin-right: 5px;}
+
+
+
+
+
+
+
+/* Nota cuerpo */
+
+
+.main-article--body{display: flex; flex-direction: column;}
+
+.article-content--cuerpo  {
+  line-height: 1.5rem;
+  letter-spacing: normal;
+}
+
+.article-content--cuerpo > p,
+.article-content--cuerpo > ul,
+.tags-cloud {margin-bottom: 1rem;}
+.tags-cloud .row {flex-wrap: wrap;}
+
+
+
+/* autor*/
+.article-content--autor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    margin: 1rem 0; 
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width:320px) and (max-width:370px) {
+    .article-content--autor{padding-left: .7rem; padding-right: .7rem;}
+    .el-autor .foto-autor{display: none;}
+  }
+
+.el-autor {display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;}
+
+.foto-autor{overflow: hidden; border-radius: 50%; filter: grayscale(); width: 25px; height: 25px; margin-right: 10px;}
+.article-content--autor a{color: inherit; text-decoration: none;}
+.nombre-autor{font-size: .7em;}
+.nombre-autor .post-author-name{text-decoration: underline; font-weight: 600; }
+
+/* fecha*/
+.article-content--fecha{font-size: .7em; margin-left: auto;}
+.article-content--fecha .seccion,
+.article-content--fecha .fecha-time {color: #000; font-weight: 600;}
+@media screen and (max-width:455px){
+  .article-content--fecha .escrito,
+  .article-content--fecha .el  {    display: none;  }
+  .article-content--fecha .seccion::after { 
+    content: "\0020\00B7\0020";
+    }
+}
+
+
+
+/* banner */
+
+.content-banner{text-align: center; justify-content: center; margin-bottom: 1rem; /*background-color: rgba(0, 0, 0, 0.15);*/} 
+.main-article--body .content-banner{margin-left: -1rem; margin-right: -1rem;} 
+
+.main-article--body  amp-ima-video.content-banner{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+.tags-cloud + .content-banner{ margin-bottom: 0;}
+
+@media screen and (max-width:768px){
+  .main-article--header + .content-banner{margin-top: 0;}  
+}
+
+/* Modulo */
+
+.content-modulo{margin-bottom: 1rem;}
+/* Relacionadas  ~~~~~~~ */
+
+.titulo-section {color: #000; font-weight: 700; border-bottom: 2px solid #bbb; padding-bottom: .5rem; margin-bottom: .5rem; margin-top: 0;}
+
+.noticias_relacionadas_2{margin-bottom: 0;}
+.noticias_relacionadas_2 header {padding-bottom: 0;}
+
+.noticias_relacionadas_2.en-cuerpo {margin-bottom: 1rem;}
+
+
+
+ul.listado_relacionadas{padding: 0; margin: 0; list-style: none;}
+
+ul.listado_relacionadas li {
+  width: 100%;
+  padding: .5rem 0;
+}
+
+  ul.listado_relacionadas li a{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+ul.listado_relacionadas li a:hover{background-color: rgba(0, 0, 0, 0.02);}
+
+ul.listado_relacionadas .pic{flex: 1 150px;  max-width: 150px;}
+ul.listado_relacionadas .txt{flex: 1 ; padding-left: 1rem; margin-top: -1px; }
+ul.listado_relacionadas .antetitulo{font-style: normal; font-size: .8em; margin-top: 0; margin-bottom: .1rem; display: block; line-height: 1em;}
+ul.listado_relacionadas .title{margin: 0; font-weight: 700; font-size: 1.05em; line-height: 1.1em; }
+
+
+
+
+
+/* Foto en cuerpo ~~~~~~~ */
+
+.article-content--cuerpo  .imgcuerpo,
+.article-content--cuerpo figure.image,
+.article-content--cuerpo .image-align-left,
+.article-content--cuerpo .image-align-right
+{
+  width: 100%;
+  max-width: 100%;
+  padding: 0; 
+  margin: 0 auto;
+  max-width: 768px;
+  position: relative;
+
+}
+
+.article-content--cuerpo figure.image,
+.article-content--cuerpo .image-align-left,
+.article-content--cuerpo .image-align-right
+{
+  margin-bottom: 1rem;
+  /*border-bottom: solid 5px red;*/
+}
+
+/*
+.article-content--cuerpo .image-align-left,
+.article-content--cuerpo .image-align-right {
+    border-bottom: solid 5px fuchsia;
+}
+*/
+
+
+
+.article-content--cuerpo figure.image figcaption{
+  font-size: .7em; position: absolute; bottom: 0; left: 0; width: 100%; padding: .5rem; background-color: rgba(0, 0, 0, 0.308); color: #fff;line-height: 1em;
+}
+
+.article-content--cuerpo figure.image img{max-width: 768px;}
+
+
+
+
+.imgcuerpo {background-color: #000;}
+
+
+
+/* Quotes ~~~~~~~ */
+
+
+.article-content--cuerpo    blockquote{
+  background-color: #eff1f3; margin: 0; margin-bottom: 1rem; padding: 2rem; text-align: center; font-size: 1.2em; font-style: italic;
+  font-weight: 600; margin-left: auto; margin-right: auto;
+}
+
+.article-content--cuerpo    blockquote p{margin: 0;}
+
+
+/* Tags ~~~~~~~ */
+.tags-cloud{display: flex; flex-direction: column; flex-wrap: wrap; align-items: baseline;}
+.tags-cloud .label {
+  text-decoration: none;
+  font-size: .8em;
+  line-height: 1;
+  background-color: #f3f3f3;
+  padding: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.tags-cloud .label:hover{background-color: #eeecec;}
+
+
+
+
+
+
+/* SIDEBAR ===================== */
+
+.main-sidebar{  padding:2rem; width: 300px; position: relative;}
+.main-sidebar a{text-decoration: none; color: #000;}
+.main-sidebar nav a{padding: .3rem 0; display: flex;}
+.main-sidebar nav ul ul{padding-left: .5rem; font-size: .9em;}
+.main-sidebar nav > ul > li > a{font-weight: 500;}
+
+.close-sidebar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center; justify-content: center;
+}
+
+.path-close{width: 50px; }
+
+
+
+/* ~~~ solo movil ~~~~ */
+
+
+@media screen and (max-width:768px){
+
+    .main-article--header {padding-left: 1rem; padding-right: 1rem;}
+
+    .article-content--cuerpo  {padding-left: 1rem; padding-right: 1rem;}
+
+    .main-container > .row{flex-direction: column;}
+
+    ul.listado_relacionadas .txt{padding-left: .7rem;}
+    ul.listado_relacionadas .antetitulo{font-size: .65em; margin-top: 0;}
+
+
+    .article-content--autor{margin-bottom: 0;}
+
+}
+
+
+
+
+/* loader ............ */
+.lds-dual-ring{display:inline-block;width:80px;height:80px}
+.lds-dual-ring:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:6px solid #fff;border-color:#fff transparent;animation:lds-dual-ring 1.2s linear infinite}
+@keyframes lds-dual-ring {
+0%{transform:rotate(0deg)}
+100%{transform:rotate(360deg)}
+}
+
+
+/* Widgets en cuerpo */
+
+.article-content--cuerpo .widget[class^="widget"]{  
+  max-width: 550px;
+  margin: auto;
+}
+.article-content--cuerpo .widget[class^="widget"]::after{
+  content: " ";  
+  display: block;
+  width: 25%;
+  height: 3px;
+  background-color: #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.article-content--cuerpo .widget-instagram iframe{
+  border: solid 1px #dbdbdb;
+}
+
+.margen-top1{
+  margin-bottom: 60px;
+  margin-top:20px
+}
+
+
+/* banner sticky sidebar 
+@media screen and (min-width:768px){
+  
+  .col--sidebar .content-banner:last-child{
+    position: sticky;
+    top: 10px;
+  }
+
+}
+*/
+
+
+
+/* nuevo componente del 25/08/2021 - Compatir iconos */
+
+
+.share-group {
+  font-size: 11px;
+  background-color: #f0f0f0 ;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 77px;  
+  width: 100%;
+  z-index: 10;
+  padding:.7rem;
+  margin-bottom: 1rem;
+}
+.share-group .txt{font-style: italic;}
+.share-group amp-social-share{margin-left:10px; background-size: 16px; border-radius: 2px; width: 20px; height: 20px;}
+
+
+
+@media screen and (min-width:768px){
+
+  
+  .share-group {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    flex-wrap: wrap;
+    width: 150px;
+    border: solid 1px #dbdbdb;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: -3px 4px 3px -2px #00000024;
+}
+
+
+  .share-group .txt {width: 100%; text-align: center; margin-bottom: 7px;}
+  .share-group amp-social-share{width: 30px; height: 30px; background-size: 26px; margin: 0; margin-bottom: 5px;}
+  .share-group .share-icon--tw{margin-left: 7.5px; margin-right: 7.5px;}
+
+}
+
+
+/* botón siganos en google news */
+
+.btn-seguinos-gnews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn-seguinos-gnews::before {
+  content: "Sí­ganos en";
+  margin-right: 5px;
+}
+
+.btn-seguinos-gnews a {
+  background-image: url(/u/plantillas/imgs/google-news.svg);
+  background-size: 83%;
+  border: solid 1px #dadada;
+  width: 72px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+}
+
+.btn-seguinos-gnews a span {
+  display: none;
+}
+
+
+/* carousel */
+
+
+.main-article--body amp-carousel{margin-bottom: 1rem;}
+
+amp-carousel figure { margin: 0;}
+.theFigure {position: relative;   margin: 0;}
+.theCaption:empty {  display: none;}
+
+amp-carousel .theCaption,
+.galeriaSimple--foto .theCaption {
+  position        : absolute;
+  bottom          : 0;
+  left            : 0;
+  background-color: rgba(0, 0, 0, 0.801);
+  font-size       : .7em;
+  line-height     : 1.2em;
+  color           : rgba(255, 255, 255, 1);
+  padding         : 7px 12px;
+  width           : 100%;
+}
+
+
+.theCaption span{color: rgba(255, 255, 255, 0.6); margin-left: 5px;}
+.galeriaSimple--foto .theFigure{margin-bottom: 1rem;}
+
+
+
+
+/* archivos adjuntos */
+
+.archivos-adjuntos{margin-bottom: 1rem;}
+.archivos-adjuntos ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: -.5em;
+  margin-right: -.5em;
+}
+
+.archivos-adjuntos ul li {display: flex; margin: .5em; padding: 0;}
+
+.archivos-adjuntos ul li a {
+  font-size: .85em;
+  line-height: 1em;
+  text-decoration: none;
+  background-color: #eeecec;
+  /*padding: .45em .65em;*/
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  border: solid 1px #e1e0e0;
+}
+
+.archivos-adjuntos ul li a:hover {
+  border: solid 1px rgba(0, 0, 0, 0.075);
+  background-color: #efefef;
+  color: #000;
+}
+
+
+
+
+
+.archivos-adjuntos ul li a span.ico {
+  display: block;
+  width: 30px;
+  height: 100%;
+  background-color: #e1e1e1;
+  background-image: url(/u/plantillas/imgs/ico-gral/adjuntos-download-3.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-right: solid 1px #ffffff87;
+}
+
+
+
+.archivos-adjuntos ul li a span.txt {
+  padding: .7em;
+  box-shadow: inset 3px 0 5px -5px black;
+}
+
+.archivos-adjuntos ul li a[href*="pdf"] span.ico {
+  background-image: url(/u/plantillas/imgs/ico-gral/adjuntos-pdf.svg);
+  background-size: 19px;
+}
+
+
+.archivos-adjuntos ul li a:hover {
+  background-color: #f9f6e9;
+}
+
+.archivos-adjuntos ul li a[href*="pdf"]:hover {
+  background-color: #f9e9e9;
+}.mlist__section p,
+.mlist__section h5{margin:0;}
+
+.mlist__item{ display: flex; padding-bottom: .5rem; margin-bottom: .5rem; border-bottom: solid 1px #ccc;}
+.mlist__item a{text-decoration: none;}
+.mlist__photo-content{ flex-grow: 0; width: 80px; background-color: #ccc;}
+.mlist__txt-content{ flex-grow: 1; display: flex; }
+.mlist__txt-content a{padding-left: 1rem; display: flex;flex-direction: column; width: 100%;}
+
+
+.mlist__section .volanta {font-size: .7em; text-transform: uppercase;}
+.mlist__section .title{font-size: 1em; font-weight: 600;}
+
+/*footer de cada item */
+
+.mod .item-footer{font-size: .7em; margin-top: .5rem; line-height: 1em; display: flex; align-items: center; justify-content: flex-start; line-height: 1em;}
+
+
+
+/* modulo minuto a minuto */
+
+.mod.m-a-m .mlist__item{flex-direction: column;}
+
+/* RELACIONADAS  ============== */
+
+.nrel{width: 100%;}
+.nrel .link-url{text-decoration: none;}
+
+.nrel--group div[role="listitem"]{display: flex; flex-wrap: wrap; margin-left: 0; margin-right: 0;}
+
+.nrel--group div[role=listitem]{overflow: hidden; min-width: 100%;}
+
+.nrel--row {display: flex;flex-wrap: wrap;  margin-left: -15px;  margin-right: -15px;}
+
+.nrel--noticia {
+  flex: 0 33.333%;
+  width:  33.333%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+.nrel--link-img{flex: 1 30%;}
+.nrel--txt{flex: 1 70%; background-color: #f5f5f5; padding:15px; padding-bottom: 1.2rem; display: flex; flex-direction: column;}
+.nrel--link-titulo{text-decoration: none;}
+.nrel--link-titulo:hover{text-decoration: underline;}
+.nrel--titulo-noticia{margin-bottom: auto; font-size: 1.2em; line-height: 1.1em;}
+
+.nrel--seccion-link{text-decoration: underline;}
+
+.nrel--article-footer{font-size: .85em; line-height: 1em; margin-top: .5rem;}
+
+.nrel--foto.imagen-m{display: none;}
+
+
+.btn-mas-noticias {
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1;
+  background-color: #f3f3f3;
+  padding: .5rem;
+  margin-right: .5rem;
+  font-weight: 600;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+
+.nrel-autor{display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; font-size: .7em;}
+.nrel .amp-social-share-system{
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    background-size:10px ;
+}
+.nrel .amp-social-share-system:hover{
+    background-color: #868686;
+}
+
+
+@media screen and (max-width:768px){
+  
+  .nrel{padding-left: 1rem; padding-right: 1rem;}
+  .nrel--foto.imagen-m{display: block;}
+  .nrel--foto.imagen-d{display: none;}
+  
+  .nrel--group div[role=listitem]{flex-direction: column;}
+
+  .nrel--noticia {
+    flex: 1 100%;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;    
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    border-bottom: solid 1px #eee;
+  }
+
+  .nrel--row{
+    flex-direction: column;    
+    max-width: 100%;
+  }
+
+  .nrel--txt{padding:0 .8rem; padding-right: 0; background-color: transparent; display: flex; flex-direction: column;}
+  .nrel--titulo-noticia{font-size: 1em; line-height: 1.05em; margin-bottom: 0;}
+  
+   .nrel-autor{margin-top: 0;}
+   .nrel--article-footer{margin-top: auto; margin-bottom: 0; }
+
+   .nrel .amp-social-share-system{margin-top: -2px; margin-bottom: -2px; margin-right: 0;}
+
+   .nrel--row--bnn .content-banner{margin-top: calc(1rem - 10px) ;}
+
+   .nrel-autor{margin-top: .5rem; }
+
+   .nrel{padding-left: 0; padding-right: 0;}
+   .nrel .mod__titulo{margin-left: 1rem; margin-right: 1rem;}
+   .nrel--row{margin-left: 0; margin-right: 0;}
+
+}
+
+
+
+
+
+/* modulos ocultos */
+
+@media screen and (min-width:768px){
+  .nrel--noticia{margin-top: 30px;}
+  .nrel--noticia:nth-child(1),
+  .nrel--noticia:nth-child(2),
+  .nrel--noticia:nth-child(3)  { margin-bottom: 0; margin-top: 0;}
+  .nrel--noticia.hidden-d {margin: 0;}
+
+  .nrel--txt{border: 1px solid #e4e4e4;}
+}
+
+
+
+
+
+/* agregado el 04-11-22 */
+
+@media screen and (max-width:768px){
+
+
+  article.video-relacionado{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  article.video-relacionado .nrel--txt{
+    border: 1px solid #e4e4e4;
+    background-color: #f5f5f5;
+    padding: 15px 15px 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: -1px;
+  }
+
+}/* FOOTER ===================== */
+
+.site-footer{    
+    width: 100%;
+    background-color: #f8f9fa;   
+    text-align: center;   
+  }
+  .footer-zone-1{padding: 1rem; padding-bottom: 0;}
+  .footer-zone-2{padding: 1rem;}
+  .footer-zone-3{padding: 1rem;}
+  
+  .footer--main-logo-img{width: 150px; }
+  .footer--redes  {width: 100%; display: flex; justify-content: center;}
+  .footer--redes a {margin: 0 .5rem; opacity: .7;}
+  .footer--redes a:hover { opacity: 1;}
+  .footer--redes .ico {width: 20px; filter: invert(100); opacity: .7;}
+  
+  
+  .footer--nav{display: flex; flex-wrap: wrap; justify-content: center; font-size: .8em;}
+  
+  .footer--nav a{text-decoration: none; font-size: .9em; line-height: 1em; color: #000; text-transform: uppercase; padding:.7rem; }
+  
+  .site-footer small{font-size: .7em; line-height: 1en; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+  .site-footer small span.separa{border-left: solid 1px #818181; height: 5px; margin: 0 .5rem;}
+  
+  .footer-zone-3{ background-color: #eff1f3}
+  
+  .e80logo {width: 40px; height: 14px; filter: invert(1); margin-top: -5px; opacity: .6;}
+  .color-e80{fill: #575757 ;}
+  
+  @media screen and (max-width:768px){
+    .site-footer small {line-height: 1.5em;}
+    .site-footer small span.derechos{width: 100%;}
+    .site-footer small span.copy + .separa,
+    .site-footer small span.derechos + .separa  {display: none;}
+    .footer-link-e80 svg{margin-top: 5px;}
+  
+  }
+  
+  
+  
+  
+  
+  :root{
+    --gris700: #999999;
+    --gris800: #666666;
+    
+    --gris-100: #f8f8f8;
+    --gris-200: #f6f6f6;
+    --gris-300: #eee;
+    --gris-400: #ddd;
+    --gris-800: #777;
+
+    --azul-brand: #105ba3;
+    --celeste-brand: #25ace0;
+    --celeste-link: #68d1ff;
+    --azul-brand-2: #00408c;
+    --azul-oscuro: #022b52;
+    --naranja: #EE7100;
+    --celeste: #25ace0;
+    --verde: #2BAE9C;
+
+}
+
+
+/* HEADER =====================================
+============================================= */
+
+.main-header {
+    z-index: 99;
+    position: relative;    
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 21%);
+    
+}
+
+
+
+
+
+/* TOP BAR */
+.main-header .top-bar{font-size: 11px;background-color: var(--celeste); color: #fff;  border-bottom: solid 1px #ccc;padding: 3px 0; border-bottom: solid 1px #d6eaf3; height: 40px; display: flex; align-items: center; justify-content: center; font-weight: 500;}
+
+.main-header .top-bar a{color: #fff;}
+.main-header .top-bar a:hover{color: #fff;}
+.main-header .top-bar .row{justify-content: space-between;}
+.main-header .top-bar .item{width: 33.33%;}
+.main-header .top-bar .fecha-top{text-align: center;}
+.main-header .top-bar .item-last{text-align: right;}
+.main-header .top-bar .item-last a{margin-left: 15px;}
+
+
+.top-bar--link-contacto{ display: flex;align-items: center; font-weight: 600; float: right;}
+.top-bar--link-contacto svg{margin-right:3px; fill: #fff; width: 16px; height: 16px;}
+
+.fecha-top {display: flex; align-items: center; justify-content: center;}
+.fecha-top .separador{margin:0 5px; opacity: .7; margin-top: -2px;}
+
+
+.main-header .center-bar{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.grupo-links-top {display: flex; align-items: center;}
+
+.btn-ultimas-noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-brand);
+    width: fit-content;
+    padding: 4px 7px; border-radius: 2px;
+    margin-right: 9px;
+}
+.btn-ultimas-noticias:hover{
+    background-color: var(--azul-brand-2);
+    color: #fff;
+}
+
+
+.main-header .center-bar{
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.main-header a{transition:.2s ease-in-out; text-decoration: none;}
+.main-header a:focus{text-decoration:none}
+.main-header  .container{display:flex}
+.main-header  .container > div{display:flex;align-items:center}
+.main-header [class*="col-"]{padding-left:0;padding-right:0;width:33.33%}
+.main-header .col-logo{justify-content:center;padding:1rem 0}
+.main-header .col-tools{justify-content:flex-end}
+.main-header .col-hamburger{display:none}
+.icolinks{display:flex}
+.bg-ico-ig{border-radius: 50%; background: rgb(206,107,1); background: linear-gradient(0deg, rgba(206,107,1,1) 0%, rgba(186,0,124,1) 46%, rgba(114,64,141,1) 100%); display: flex; justify-content: center; align-items: center;}
+
+@media screen and (min-width:768px){    
+    .main-logo-img{width:160px}
+}
+
+
+/* links especiales internos */
+
+.icolinks a {display: flex;flex-direction: column;align-items: center;font-weight: 600;padding: 1rem;font-size: 11px;    }
+.icolinks a:hover{color: var(--azul-brand); }
+.icolinks a:hover svg{transform: s  e(1.25);}
+.icolinks svg{fill: var(--azul-brand);width: 30px;height: auto;transition:all .15s ease-in-out;}
+
+.main-header .icolinks svg {
+    fill: var(--azul-brand);
+}
+
+
+.col-menu{display: flex;align-items: center;}
+
+/* ul redes */
+ul.redes-sociales{display:flex;margin:0;padding:0;list-style:none;justify-content:flex-end}
+ul.redes-sociales a{color:var(--azul-brand);font-size:20px;display:flex;font-weight:100;margin-left:20px}
+ul.redes-sociales svg{width:18px;height:auto; fill: var(--azul-brand);}
+ul.redes-sociales a:hover svg{fill:var(--celeste-brand)}
+
+
+
+.main-footer ul.redes-sociales svg{fill: var(--azul-brand);}
+.main-footer .icolinks svg{fill: #000;}
+
+
+/* "sub header" */
+.sub-header{background-color: var(--azul-brand);}
+.sub-header   .container{display: flex; justify-content: center; position: relative;}
+
+.main-header .btn-buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-brand);
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;       
+    border: 0;
+    cursor: pointer;
+}
+
+.main-header   .btn-buscador svg{fill: #fff;}
+.main-header   .btn-buscador:hover{background-color: var(--azul-brand-2);}
+
+
+/* lightbox buscador */
+.lightbox-buscador{position:fixed;top:0;left:0;width:100%;height:100vh;background-color:rgba(0,0,0,0.85);z-index:999;display:flex;justify-content:center;align-items:center}
+
+.lightbox-buscador .titulo-buscar{font-weight:100;color:var(--celeste-brand)}
+.lightbox-buscador .el-buscador{width:50%;display:block;max-width:550px}
+
+form.el-buscador .search-group{display:flex;justify-content:center;align-items:center}
+form.el-buscador .input-buscar,
+form.el-buscador .btn-submit{background-color:#fff;border:0;height:48px;padding-left:15px;padding-right:15px}
+form.el-buscador .input-buscar{border-top-left-radius:5px;border-bottom-left-radius:5px;flex:1 1 90%}
+form.el-buscador .btn-submit{border-top-right-radius:5px;border-bottom-right-radius:5px;font-size:1.8em;line-height:1em;flex:0;width:fit-content;text-align:right; display: flex;justify-content: center; align-items: center;}
+form.el-buscador .btn-submit .ico-lupa{width:20px}
+
+#x-sliding-buscador{width:50px;height:50px;color:var(--celeste-brand);cursor:pointer;cursor:hand;position:absolute;right:15px;top:15px;opacity:.85;border:0;background-color:transparent}
+#x-sliding-buscador .ico-cerrar{width:30px;filter:invert(1)}
+
+
+/* menu */
+.main-menu{display:flex;flex-wrap:wrap;margin:0;padding:0;list-style:none;justify-content:center}
+.main-menu > li{display:flex;position:relative;flex-direction:column}
+.main-menu a{padding:7px 8px;line-height:16px;font-size:13px;margin:0;color:#fff; border-bottom:0}
+.main-menu .subsec li{display:block;width:100%}
+.main-menu .subsec a{display:block;font-size:.9em;min-width:max-content;width:100%;border-bottom:solid 1px rgba(255,255,255,0.164);text-transform:none}
+.main-menu a:hover{background-color:rgba(0,0,0,0.25);color:#fff}
+.main-header a:hover{color:#4cceff}
+
+
+@media screen and (min-width:768px){
+    .main-menu .subsec{position:absolute;min-width:100%;top:100%;display:none;box-shadow:inset 0 6px 15px -10px #000;background-color:#0b447a;width:auto;min-width:100%;top:100%}
+    .main-menu .cont-subsec:hover .subsec{display:block}
+    .main-menu .cont-subsec:hover > a{background-color:rgba(0,0,0,0.25);color:#fff}
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    .main-header {position: fixed; width: 100%;}   
+    .main-header .top-bar  {display: none;}   
+    
+    .main-header .container .col-links,
+    .main-header .container .col-tools      {display: none;}   
+    
+    
+    .main-sidebar ul.redes-sociales svg{fill: #fff;}
+    
+    .main-header>.container> .col-tools,
+    .main-header>.container> .col-links   {display: none;}
+    .main-header .col-logo  {padding: 10px 0; }
+    
+    .main-logo-img {width: 105px;}
+    .header-social-share{margin-left: auto; margin-right: 15px;}
+    .header-toggle-button{ width: 30px; height: 30px;margin-top: auto;margin-bottom: auto;}
+    .header-toggle-button svg{fill: var(--azul-brand)}
+    .amp-social-share-system {background-color: var(--celeste-brand);border-radius: 50%;width: 30px;height: 30px;background-size: 13px;}
+
+        /* SIDEBAR  ============== */
+        .main-sidebar{background-color: var(--azul-brand); font-size: .85em; padding: 20px; padding-bottom: 0;}
+        .main-sidebar a{color: #fff;}
+        .main-sidebar .close-sidebar {top: 5px; right: 5px; z-index: 2;}
+        .main-sidebar .close-sidebar svg{fill:var(--celeste-brand); }
+              
+        .main-sidebar nav ul ul{padding-left: 0;}
+        .main-menu > li{ width: 100%;}
+
+        .main-sidebar  .main-nav li a {
+            display: block;
+            border-bottom: solid 1px rgba(255, 255, 255, .4);
+            padding-left: 0;
+            margin-left: 0;
+            padding-bottom: 7.5px;
+            padding-top: 7.5px;
+        }
+
+
+        .main-sidebar .subsec li a {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: rgba(255, 255, 255, 0.7);
+            border-bottom-color: rgba(255, 255, 255, 0.07);
+        }
+
+      
+        .main-sidebar  li a.link-mosaico,
+        .main-sidebar  li a.link-ttopic,
+        .main-sidebar  li a.link-suplementos {
+            padding-left: 20px;
+            padding-right: 20px;
+            border-bottom-color: rgba(0, 0, 0, 0.25);
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        .main-sidebar  li a.link-mosaico {
+            background-color: var(--naranja);
+            margin-top: -1px;
+        }
+
+        .main-sidebar  li a.link-ttopic {
+            background-color: var(--celeste);
+        }
+
+        .main-sidebar  li a.link-suplementos {
+            background-color: var(--verde);
+        }
+
+
+        .sliding-menu--footer{background-color:#000;margin-left:-20px;margin-right:-20px;padding:20px;color:#fff}
+        .main-sidebar .icolinks{display:flex;justify-content:flex-start;padding:20px 10px}
+        .main-sidebar .icolinks a{padding-top:0;padding-bottom:0; margin-right: 15px;}
+        .main-sidebar  .icolinks svg{fill:#9ee0f9;margin-bottom:5px}
+
+        
+        .sliding-menu--otroslinks {display: flex; align-items: center; color: #fff; margin: 7px 0; margin-bottom: 15px; line-height: 1em;}
+        .sliding-menu--otroslinks a{font-weight: 400; font-size: .9em; margin-right: 10px; background-color: rgb(0 0 0 / 20%); padding: 8px 12px;}
+    
+        
+        form.el-buscador .input-buscar,
+        form.el-buscador .btn-submit{height: 33px; padding:10px; font-size: 12px; line-height: 1em;}
+        form.el-buscador .btn-submit .ico-lupa{width: 14px;}
+
+        .sliding-menu--footer{background-color: rgb(0 0 0 / 20%);border-top: solid 1px rgb(0 0 0 / 20%); margin-top: 0;}
+        .sliding-menu--redes{display: flex; align-items: center; margin-bottom: 20px;}
+        .sliding-menu--redes span{margin-right: 0; font-size: 10px;}
+        .sliding-menu--redes ul.redes-sociales a{margin-left: 15px;}
+        .sliding-menu--redes .bg-ico-ig{margin-left: -3px}
+
+     
+
+}
+
+
+
+
+
+
+
+
+/* ARTICULO ============== */
+/* ====================== */
+@media screen and (min-width: 768px){
+    .container.p-0{padding-left: 0; padding-right: 0;}
+}
+
+
+
+@media screen and (min-width:768px){
+    .article-content--cuerpo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.article-content--autor{background-color: var(--azul-brand); color: #fff;}
+
+.article-content--autor a{color: #fff;}
+.article-content--cuerpo a {color: var(--azul-brand);}
+.article-content--cuerpo a:hover {background-color: var(--azul-brand); color: #fff;}
+
+.article-content--fecha .fecha-time,
+.article-content--fecha .seccion{color: rgba(255, 255, 255, 1);}
+
+.main-article--header .antetitulo{font-size: .8em; color: var(--azul-brand); text-transform: none; font-weight: 700; }
+.main-article--header .titulo {
+    color: #000;
+    font-size: 3em;
+    line-height: 1.1em;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    word-spacing: -.03em;
+}
+
+.main-article--header .bajada{font-size: 1.2em; font-style:italic ;}
+
+.article-content--cuerpo blockquote{background-color: var(--azul-brand); color: #fff;}
+
+.tags-cloud .label{background-color: var(--azul-brand);color: #fff;font-weight: 400;}
+.tags-cloud .label:hover{background-color:var(--celeste-brand);color: #fff;}
+
+
+.nrel-autor{color: var(--azul-brand);}
+
+
+@media screen and (max-width:768px){
+.main-article--header .titulo{font-size: 1.9em; }
+}
+
+.titulo-section{border-bottom-width: 1px;}
+
+.noticias_relacionadas_2.en-cuerpo {
+    margin-bottom: 0;
+    background: var(--crema);
+    padding: 1.35rem;
+    margin-bottom: 1rem;
+    background-image: url(/u/plantillas/p/abc-noticias/imgs/bg-light-1.png);
+    background-blend-mode: multiply;
+}
+
+.noticias_relacionadas_2.en-cuerpo a{color: #000;}
+.noticias_relacionadas_2.en-cuerpo .titulo-section{margin-bottom: 0; border-bottom-color: rgba(0, 0, 0, 0.13);}
+
+.noticias_relacionadas_2.en-cuerpo ul.listado_relacionadas li{border-bottom: solid 1px rgba(0, 0, 0, 0.13);}
+.noticias_relacionadas_2.en-cuerpo ul.listado_relacionadas li:last-child{
+    border-bottom:none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width:768px){
+    ul.listado_relacionadas .pic{max-width: 130px;}
+}
+
+
+
+
+
+
+/* FOOTER  ============== */
+
+.main-footer{    
+    background-color: #e6e6e6;   
+    border-top: solid 1px rgba(0, 0, 0, 0.1);    
+}
+
+@media screen and (min-width:768px){
+    .main-footer .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.main-footer a{color: var(--azul-brand); text-decoration: none;}
+.main-footer a:hover{color: var(--celeste-brand);}
+
+.main-footer [class*="col-"]{display: flex; align-items: center;}
+.main-footer  .row{display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap;}
+
+.footer-zona-1 {padding: 20px 0;}
+
+.footer-logo-img{width: 110px;}
+
+.main-footer p{margin: 0;}
+.main-footer p.bajada{margin-bottom: 5px; font-style: italic;}
+.main-footer p a{color: var(--celeste-link);}
+.main-footer span.separa{color: var(--celeste-link); margin: 0 5px;}
+
+
+.main-footer .main-menu a{padding: 4px ;}
+.main-footer .main-menu a:hover{background-color: transparent; color: inherit;}
+.main-footer .main-menu li:hover .subsec {display: none;}
+.main-footer .main-menu .subsec{display: none;}
+
+.main-footer .col-redes {margin-left: auto;}
+.main-footer .icolinks {margin-top: 10px; margin-bottom: -5px;}
+.main-footer .icolinks svg{width: 20px;}
+.main-footer .redes-sociales a{margin: 0; padding: 10px ;}
+
+/* zona 2 */
+.main-footer .footer-zona-2 {padding:20px 0;background-color: #dedede;}
+.main-footer .footer-zona-2 .row{display: flex; align-items: flex-end;}
+
+.main-footer .col-logos-group {flex-direction: column; margin-right: auto;align-items: flex-start; }
+
+/*img sizes*/
+.main-footer .col-logos-group .img-epsilon-mg{width: 180px;}
+.main-footer .logos-group a {display: flex; flex-wrap: wrap;}
+
+
+.main-footer .logos-group {margin-top: 20px; display: flex; flex-wrap: wrap;}
+
+.main-footer .logos-group [class^="logos-group"]{margin-right: 30px;}
+
+.main-footer .col-logos-radios {flex-direction: column;align-items: flex-start;}
+.main-footer .col-logos-radios .los-logos{display: flex;flex-wrap: wrap;}
+.main-footer .col-logos-radios strong{margin-bottom: 40px; margin-left: auto; margin-right: auto;    text-transform: uppercase;color: rgb(0 0 0 / 56%);}
+.main-footer .col-logos-radios a{margin-left: 30px; display: flex; align-items: center;}
+
+
+/* zona 3 */
+.footer-zona-3 {background-color: #212121; color:#fff;padding: 20px 0; font-size: 11px; line-height: 1em;}
+.footer-zona-3 a {color: var(--celeste-link);}
+.footer-zona-3 .col-otroslinks {margin-left: auto;}
+.footer-zona-3 .col-otroslinks a {margin-left: 5px; }
+.footer-zona-3 .col-otroslinks a:hover {color: #fff;}
+
+
+
+.footer-zona-3 .e80 a {margin: 0; padding: 0;}
+.e80 a {display: flex; align-items: center; justify-content: center; opacity: .7; margin-left: auto; margin-top: 2px; margin-bottom: -2px;}
+.e80 a:hover {opacity: 1;}
+.footer--logo-e80{width: 40px; height: 20px; margin-top: 0; margin-left: 5px;}
+
+
+/* MOBILE */
+
+@media screen and (max-width:768px){
+    
+.footer-zona-1 .col-logo{display: none;}
+.main-footer .col-redes{flex-direction: column; margin-left: auto; margin-right: auto;}
+.main-footer .logos-group{ justify-content: center;}
+
+
+.footer-zona-2 img{max-width: 100%;}
+
+.main-footer .col-logos-group{align-items: center; margin:auto;}
+.main-footer .col-logos-radios strong{margin: 15px auto;}        
+.main-footer .col-logos-radios a{margin: auto;}
+.main-footer .los-logos{justify-content: center; display: flex; justify-content: center;}
+.main-footer .los-logos a{padding: 0 7.5px;}
+
+.main-footer .col-logos-radios{border-top:solid 1px rgb(132 132 132 / 35%); margin-top: 15px;}
+
+.footer-zona-2 img.img-epsilon-mg{max-width: 150px;}
+
+
+
+.main-footer .redes-sociales a{padding: 15px ;}
+
+.footer-zona-3{text-align: center;}
+.footer-zona-3 [class*="col-"]{flex-direction: column; justify-content: center; align-items: center; width: 100%;}
+.footer-zona-3 span{display: none;}
+.footer-zona-3 .col-copy p{margin: 7.5px 0; line-height: 1.3em;}
+.footer-zona-3 .col-otroslinks{flex-direction: row; flex-wrap: wrap; width: 100%; margin: 7.5px 0;}
+
+.footer-zona-3 .col-otroslinks a{margin: 5px; padding:5px ;}
+.footer-zona-3 .e80{margin-top: 10px; width: 100%; display: flex; justify-content: center; align-items: center; }
+}
+
+
+
+.mod__titulo{color: #000; position: relative;text-align: left;padding-top: 20px; font-weight: 800;}
+
+
+.mod__titulo::after {
+    content: "";
+    width: 100%;
+    height: 7px;
+    background: url(/u/plantillas/p/abc-noticias/imgs/titulo-deco-azul-2.png), linear-gradient(90deg, rgba(190,203,227,1) 0%, rgba(190,203,227,0) 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.article-content--cuerpo .widget[class^=widget]:after{background-color: var(--azul-brand);}
+
+.btn-mas-noticias{background-color: var(--azul-brand); color: #fff;}
+
+
+/* Relacionadas SERZEN */
+
+.nrel.rel-serzen{
+    background: #04656d;
+    border-top: solid 4px #9ab931;
+    padding: 15px 30px;  
+    max-height: 425px; 
+    border-radius: 3px;
+}
+
+.nrel.rel-serzen .mod__titulo:after{display: none;}
+
+.nrel.rel-serzen .mod__titulo{
+    width: 150px;
+    height: 40px;
+    margin-bottom: 15px;
+    background-image: url(https://www.serzen.mx/u/plantillas/p/serzen/imgs/main-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    text-indent: -999px;
+ }
+.nrel.rel-serzen .nrel-autor,
+.nrel.rel-serzen .nrel--link-titulo:hover{color: #04656d;}
+
+.nrel.rel-serzen .nrel--txt{border-bottom-left-radius: 2px;border-bottom-right-radius: 2px}
+
+
+    @media screen and (max-width:768px){
+        .nrel.rel-serzen{max-height: none; padding-left: 0; padding-right: 0;}
+        .nrel.rel-serzen .nrel--noticia{border-bottom: 1px solid rgb(189 193 163 / 27%);}
+        .nrel.rel-serzen .nrel--noticia a{color: #efefef;}
+        .nrel.rel-serzen .nrel--noticia:last-child{border-bottom: 0;}
+        .nrel.rel-serzen  .amp-social-share-system{background-color: rgb(189 193 163 / 18%);}
+    }       
+   
+
+    /* titulo seccion custom distrito M */
+
+    .titulo-seccion.id_seccion_697{
+        background-color: #ffea00;
+        background-image: none;
+        background-image: url(/u/plantillas/p/abc-noticias/imgs/main-logo--distritoM.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: normal;
+    background-size: 170px;
+    width: 100%;
+    height: 62px;
+    border-top: solid 1px rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 17%);
+    z-index: 99;
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width:768px){
+    .titulo-seccion.id_seccion_697{
+        position: fixed;
+        top: 60px;
+        background-size: 130px;
+        height: 50px;
+    }
+
+    .helper.id_seccion_697{
+        height: 30px;
+    }
+    
+
+
+}
+
+
+/* corrección 27/04/22 */
+
+.article-content--cuerpo p img,
+.article-content--cuerpo img.placeholder {max-width: 100%;}
+
+
+.main-article--body .content-banner{margin-left: 0; margin-right: 0;}
+		@media screen and (min-width:768px){
+		.hidden-d,
+		* .hidden-d,
+		*.hidden-d,
+		.hidden-d > * {display: none;}
+		}
+
+		@media screen and (max-width:768px){
+		.hidden-m,
+		* .hidden-m,
+		*.hidden-m,
+		.hidden-m > *  {display: none;}
+		}
+		
+
+	</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script>
+<script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+<script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+<script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+<script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
+<title>El lente fronterizo de Venegas | ABC Noticias</title>
+<meta name="description" content="Yvonne Venegas juega a fotografiar los límites. Nacida en Tijuana, las fronteras forman parte su vocabulario artístico que se ubica entre la realidad y la ficción, el gesto la pose, ella misma y su gemela Julieta… Ahora que prepara una serie sobre San Pedro, recibió al <strong>ABC</strong> para platicar sobre su obra." />
+<link rel="canonical" href="https://abcnoticias.mx/show/2015/12/3/el-lente-fronterizo-de-venegas-38539.html" />
+<meta property="og:site_name" content="ABC Noticias" />
+<meta property="og:image" content="https://abcnoticias.mx/u/fotografias/m/2015/12/3/f1280x720-38456_170131_5050.jpg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abcnoticias.mx/show/2015/12/3/el-lente-fronterizo-de-venegas-38539.html" />
+<meta property="og:title" content="El lente fronterizo de Venegas" />
+<meta property="og:description" content="Yvonne Venegas juega a fotografiar los límites. Nacida en Tijuana, las fronteras forman parte su vocabulario artístico que se ubica entre la realidad y la ficción, el gesto la pose, ella misma y su gemela Julieta… Ahora que prepara una serie sobre San Pedro, recibió al <strong>ABC</strong> para platicar sobre su obra." />
+<meta property="og:locale" content="es_LA" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="El lente fronterizo de Venegas">
+<meta name="twitter:image" content="https://abcnoticias.mx/u/fotografias/m/2015/12/3/f1280x720-38456_170131_5050.jpg">
+<meta name="twitter:domain" content="https://abcnoticias.mx">
+<meta name="twitter:description" content="Yvonne Venegas juega a fotografiar los límites. Nacida en Tijuana, las fronteras forman parte su vocabulario artístico que se ubica entre la realidad y la ficción, el gesto la pose, ella misma y su gemela Julieta… Ahora que prepara una serie sobre San Pedro, recibió al <strong>ABC</strong> para platicar sobre su obra.">
+<script type="application/ld+json"> 
+{
+	"@context": "http://schema.org",
+	"@type": "NewsArticle",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://abcnoticias.mx/show/2015/12/3/el-lente-fronterizo-de-venegas-38539.html"
+	},
+	"headline": "El lente fronterizo de Venegas",
+    "image": [
+        "https://abcnoticias.mx/u/fotografias/m/2015/12/3/f1280x720-38456_170131_5050.jpg",
+        "https://abcnoticias.mx/u/fotografias/m/2015/12/3/f850x638-38456_115945_5050.jpg",
+        "https://abcnoticias.mx/u/fotografias/m/2015/12/3/f638x638-38456_96623_5050.jpg"
+    ],
+	"datePublished": "2015-12-3T21:17:00",
+	"dateModified": "2015-12-3T21:17:00",
+	"author": {
+		"@type": "Person",
+		"name": "Clavdio Lizarraga",
+		"url": ""		
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "ABC Noticias",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "https://abcnoticias.mx/inc/amp/img/logo_amp.png",
+			"width": "220",
+			"height": "60"
+		}
+	},
+	"articleSection": "Show",
+	"description": "Yvonne Venegas juega a fotografiar los límites. Nacida en Tijuana, las fronteras forman parte su vocabulario artístico que se ubica entre la realidad y la ficción, el gesto la pose, ella misma y su gemela Julieta… Ahora que prepara una serie sobre San Pedro, recibió al <strong>ABC</strong> para platicar sobre su obra."
+}
+</script>
+<meta name="theme-color" content="#105ba3">
+<link rel="apple-touch-icon" href="/u/plantillas/p//imgs/favicons/apple-touch-icon.png">
+</head>
+<body class="seccion-id-3">
+<amp-analytics type="comscore" id="comscore">
+<script type="application/json">
+        {
+            "vars": {
+                "c2": "6906559"
+            },
+            "extraUrlParams": {
+                "comscorekw": "amp"
+            }
+        }
+    </script>
+</amp-analytics>
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-19848139-1"
+  },
+
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+<amp-analytics type="googleanalytics" config="https://amp.analytics-debugger.com/ga4.json" data-credentials="include">
+<script type="application/json">
+{
+    "vars": {
+              "GA4_MEASUREMENT_ID": "G-6N9BTJ8L35",
+              "GA4_ENDPOINT_HOSTNAME": "www.google-analytics.com",
+              "GOOGLE_CONSENT_ENABLED": true,
+              "WEBVITALS_TRACKING": false,
+              "PERFORMANCE_TIMING_TRACKING": false,
+              "DEFAULT_PAGEVIEW_ENABLED": false,
+              "SEND_DOUBLECLICK_BEACON": false,
+              "ENABLE_REGIONAL_DATA_COLLECTION": true
+    }
+}
+
+
+</script>
+</amp-analytics>
+<amp-analytics>
+<script type="application/json">
+{
+  "requests": {
+    "pageview": "https://abcnoticias.mx/include/includes/varios/lecturas.asp?u=USER_AGENT&r=DOCUMENT_REFERRER&desde=a&docid=38539&a=0&s=3&t=0&fn=2015/12/3 21:17:00"
+    
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+    
+
+  }
+}
+</script>
+</amp-analytics>
+<header id="main-header" class="main-header id_seccion_3">
+<div class="top-bar hidden-m">
+<div class="container">
+<div class="row">
+
+<div class="grupo-links-top item col-">
+<a href="/noticias/" class="btn-ultimas-noticias" title="Link a últimas noticias">Últimas noticias</a>
+<button class="btn-buscador" on="tap:lightbox-buscador" name="Buscador">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 118.783 118.783" width="15" style="enable-background:new 0 0 118.783 118.783;" xml:space="preserve">
+<g>
+<path d="M115.97,101.597L88.661,74.286c4.64-7.387,7.333-16.118,7.333-25.488c0-26.509-21.49-47.996-47.998-47.996
+                            S0,22.289,0,48.798c0,26.51,21.487,47.995,47.996,47.995c10.197,0,19.642-3.188,27.414-8.605l26.984,26.986
+                            c1.875,1.873,4.333,2.806,6.788,2.806c2.458,0,4.913-0.933,6.791-2.806C119.72,111.423,119.72,105.347,115.97,101.597z
+                            M47.996,81.243c-17.917,0-32.443-14.525-32.443-32.443s14.526-32.444,32.443-32.444c17.918,0,32.443,14.526,32.443,32.444
+                            S65.914,81.243,47.996,81.243z" />
+</g>
+</svg>
+</button>
+</div>
+
+<div class="fecha-top item col-">
+ Lunes&nbsp;7 de Agosto&nbsp;de&nbsp;
+2023
+</div>
+<div class="item item-last col-">
+<a href="/contacto/" class="top-bar--link-contacto" title="Link a formulario de contacto">
+<svg id="Layer_1" enable-background="new 0 0 511.333 511.333" height="12" viewBox="0 0 511.333 511.333" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m486.091 427.82c12.99-18.257 25.242-101.695 25.242-172.159 0-65.667-11.575-152.747-25.181-172.076-2.522-3.574-5.945-6.136-9.715-7.563-91.357-34.596-419.026-26.721-449.33 5.175-1.549 1.63-3.145 3.963-4.177 6.473-16.854 40.891-22.93 121.187-22.93 167.991 0 47.037 6.308 128.581 23.006 168.157 1.02 2.418 2.552 4.671 4.106 6.307 30.387 31.968 358.055 39.738 449.326 5.175 3.832-1.453 7.186-4.019 9.653-7.48zm-155.023-172.158 126.906-120.561c15.065 71.014 15.288 169.05.001 241.124zm95.298-148.464-170.699 162.164-170.7-162.164c90.563-15.863 250.36-15.947 341.399 0zm-373.007 269.025c-15.065-71.013-15.289-169.05-.002-241.123l126.908 120.562zm31.611 27.902 125.786-119.497 30.447 28.925c8.107 7.7 20.822 7.699 28.928 0l30.447-28.925 125.786 119.497c-90.568 15.863-250.373 15.943-341.394 0z" /></svg>
+Contactanos
+</a>
+<a href="/usuarios/newsletter.html" class="top-bar--link-contacto">
+<svg id="Layer_1" enable-background="new 0 0 511.333 511.333" height="12" viewBox="0 0 511.333 511.333" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m486.091 427.82c12.99-18.257 25.242-101.695 25.242-172.159 0-65.667-11.575-152.747-25.181-172.076-2.522-3.574-5.945-6.136-9.715-7.563-91.357-34.596-419.026-26.721-449.33 5.175-1.549 1.63-3.145 3.963-4.177 6.473-16.854 40.891-22.93 121.187-22.93 167.991 0 47.037 6.308 128.581 23.006 168.157 1.02 2.418 2.552 4.671 4.106 6.307 30.387 31.968 358.055 39.738 449.326 5.175 3.832-1.453 7.186-4.019 9.653-7.48zm-155.023-172.158 126.906-120.561c15.065 71.014 15.288 169.05.001 241.124zm95.298-148.464-170.699 162.164-170.7-162.164c90.563-15.863 250.36-15.947 341.399 0zm-373.007 269.025c-15.065-71.013-15.289-169.05-.002-241.123l126.908 120.562zm31.611 27.902 125.786-119.497 30.447 28.925c8.107 7.7 20.822 7.699 28.928 0l30.447-28.925 125.786 119.497c-90.568 15.863-250.373 15.943-341.394 0z" /></svg>
+Suscríbete a newsletter
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="center-bar">
+<div class="container">
+<div class="col-links hidden-m">
+<div class="icolinks">
+<a href="/p/institucional/abc-radio-player.html" title="Radio">
+<svg id="Capa_1" enable-background="new 0 0 512 512" width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m136 265.002c-39.149 0-71 31.851-71 71s31.851 71 71 71 71-31.851 71-71-31.851-71-71-71zm0 112c-22.607 0-41-18.393-41-41s18.393-41 41-41 41 18.393 41 41-18.393 41-41 41z" /><path d="m432 281.002h-160c-8.284 0-15 6.716-15 15s6.716 15 15 15h160c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m432 361.002h-160c-8.284 0-15 6.716-15 15s6.716 15 15 15h160c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m452 105.002h-9.744l-205.845-63.337c-7.916-2.436-16.312 2.008-18.748 9.926s2.008 16.312 9.926 18.748l112.655 34.663h-280.244c-33.084 0-60 26.916-60 60v246c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60 0-7.806 0-242.525 0-246 0-33.084-26.916-60-60-60zm-422 60c0-16.542 13.458-30 30-30h392c16.542 0 30 13.458 30 30v36h-331v-17c0-8.284-6.716-15-15-15s-15 6.716-15 15v17h-91zm422 276h-392c-16.542 0-30-13.458-30-30v-180h452v180c0 16.542-13.458 30-30 30z" /></g></svg>
+<span>Radio</span>
+</a>
+<a href="/noticias/edicionimpresa.html?id_categoria=1149" title="Versión Impresa">
+<svg id="Capa_1" enable-background="new 0 0 512 512" width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m497 121h-114v-89c0-8.284-6.716-15-15-15h-353c-8.284 0-15 6.716-15 15v388c0 41.355 33.645 75 75 75h362c41.355 0 75-33.645 75-75v-284c0-8.284-6.716-15-15-15zm-422 344c-24.813 0-45-20.187-45-45v-373h323c0 396.466-.189 374.424.344 380.077 1.304 13.906 6.49 27.019 14.691 37.923zm407-45c0 24.813-20.187 45-45 45-3.366 0-5.695 0-9 0-24.813 0-45-20.187-45-45v-269h99z" /><path d="m304 89h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 153h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 393h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 217h-112c-8.284 0-15 6.716-15 15v112c0 8.284 6.716 15 15 15h112c8.284 0 15-6.716 15-15v-112c0-8.284-6.716-15-15-15zm-15 112h-82v-82h82z" /><path d="m80 271h48c8.284 0 15-6.716 15-15s-6.716-15-15-15h-48c-8.284 0-15 6.716-15 15s6.716 15 15 15z" /><path d="m80 335h48c8.284 0 15-6.716 15-15s-6.716-15-15-15h-48c-8.284 0-15 6.716-15 15s6.716 15 15 15z" /></g></svg>
+<span>ePaper</span>
+</a>
+
+</div>
+</div>
+<div class="col-logo">
+<a href="/" title="Ir a portada">
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/main-logo.svg?vok" width="160" height="87" layout="responsive" class="main-logo-img" alt="abc-noticias">
+</amp-img>
+</a>
+</div>
+<div class="col-tools hidden-m">
+<ul class="redes-sociales">
+<li>
+<a href="https://www.facebook.com/abcnoticiasmty/" target="_blank" rel="noopener" title="Link a Facebook">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.227px" height="96.227px" viewBox="0 0 96.227 96.227" style="enable-background:new 0 0 96.227 96.227;" xml:space="preserve">
+<g>
+<path d="M73.099,15.973l-9.058,0.004c-7.102,0-8.477,3.375-8.477,8.328v10.921h16.938l-0.006,17.106H55.564v43.895H37.897V52.332
+        h-14.77V35.226h14.77V22.612C37.897,7.972,46.84,0,59.9,0L73.1,0.021L73.099,15.973L73.099,15.973z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/ABCNoticiasMX" target="_blank" rel="noopener" title="Link a Twitter">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.637px" height="97.637px" viewBox="0 0 97.637 97.637" style="enable-background:new 0 0 97.637 97.637;" xml:space="preserve">
+<path d="M97.523,18.526c-0.14-0.165-0.371-0.221-0.568-0.131c-2.919,1.295-5.99,2.226-9.153,2.776
+          c3.358-2.526,5.86-6.024,7.143-10.035c0.062-0.192-0.002-0.402-0.159-0.527c-0.158-0.125-0.377-0.141-0.55-0.038
+          c-3.782,2.243-7.878,3.824-12.18,4.701c-3.812-3.956-9.135-6.219-14.644-6.219c-11.204,0-20.318,9.114-20.318,20.317
+          c0,1.355,0.131,2.697,0.391,4c-15.518-0.958-30.028-8.408-39.894-20.509c-0.101-0.124-0.254-0.193-0.414-0.177
+          c-0.159,0.012-0.301,0.102-0.381,0.239c-1.8,3.088-2.751,6.621-2.751,10.215c0,6.229,2.83,12.053,7.649,15.896
+          c-2.481-0.298-4.904-1.079-7.089-2.292c-0.147-0.083-0.33-0.082-0.477,0.003c-0.147,0.084-0.24,0.24-0.244,0.41l-0.002,0.26
+          c0,8.946,5.895,16.801,14.282,19.409c-2.209,0.356-4.501,0.332-6.754-0.098c-0.166-0.031-0.34,0.026-0.454,0.154
+          c-0.113,0.128-0.151,0.307-0.099,0.469c2.515,7.85,9.503,13.355,17.637,14.041c-6.785,4.971-14.805,7.59-23.279,7.59
+          c-1.561,0-3.133-0.093-4.673-0.274c-0.22-0.025-0.438,0.106-0.514,0.317c-0.076,0.213,0.005,0.451,0.195,0.572
+          c9.17,5.881,19.773,8.988,30.664,8.988c35.625,0,56.913-28.938,56.913-56.914c0-0.779-0.015-1.554-0.046-2.327
+          c3.843-2.811,7.142-6.252,9.802-10.235C97.675,18.929,97.662,18.692,97.523,18.526z" />
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCcG_he6skdxpcmeTyv97cgA" target="_blank" rel="noopener" title="Link a Youtube">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.875px" height="96.875px" viewBox="0 0 96.875 96.875" style="enable-background:new 0 0 96.875 96.875;" xml:space="preserve">
+<g>
+<path d="M95.201,25.538c-1.186-5.152-5.4-8.953-10.473-9.52c-12.013-1.341-24.172-1.348-36.275-1.341
+       c-12.105-0.007-24.266,0-36.279,1.341c-5.07,0.567-9.281,4.368-10.467,9.52C0.019,32.875,0,40.884,0,48.438
+       C0,55.992,0,64,1.688,71.336c1.184,5.151,5.396,8.952,10.469,9.52c12.012,1.342,24.172,1.349,36.277,1.342
+       c12.107,0.007,24.264,0,36.275-1.342c5.07-0.567,9.285-4.368,10.471-9.52c1.689-7.337,1.695-15.345,1.695-22.898
+       C96.875,40.884,96.889,32.875,95.201,25.538z M35.936,63.474c0-10.716,0-21.32,0-32.037c10.267,5.357,20.466,10.678,30.798,16.068
+       C56.434,52.847,46.23,58.136,35.936,63.474z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/abcnoticiasmx/" target="_blank" rel="noopener" title="Link a Instagram">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px" height="97.395px" viewBox="0 0 97.395 97.395" style="enable-background:new 0 0 97.395 97.395;" xml:space="preserve">
+<g>
+<path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
+            V12.5C0,5.09,5.624,0,12.501,0L12.501,0z M70.948,10.821c-2.412,0-4.383,1.972-4.383,4.385v10.495c0,2.412,1.971,4.385,4.383,4.385
+            h11.008c2.412,0,4.385-1.973,4.385-4.385V15.206c0-2.413-1.973-4.385-4.385-4.385H70.948L70.948,10.821z M86.387,41.188h-8.572
+            c0.811,2.648,1.25,5.453,1.25,8.355c0,16.2-13.556,29.332-30.275,29.332c-16.718,0-30.272-13.132-30.272-29.332
+            c0-2.904,0.438-5.708,1.25-8.355h-8.945v41.141c0,2.129,1.742,3.872,3.872,3.872h67.822c2.13,0,3.872-1.742,3.872-3.872V41.188
+            H86.387z M48.789,29.533c-10.802,0-19.56,8.485-19.56,18.953c0,10.468,8.758,18.953,19.56,18.953
+            c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.tiktok.com/@abcnoticiasmty" target="_blank" rel="noopener" title="Link a TikTok">
+<svg xmlns="http://www.w3.org/2000/svg" width="97.395px" height="97.395px" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" /></svg>
+</a>
+</li>
+</ul>
+</div>
+<div class="header-social-share hidden-d">
+<amp-social-share type="system" width="25" height="25" class="el-amp-social-share" data-param-url="https://abcnoticias.mx/show/2015/12/3/el-lente-fronterizo-de-venegas-38539.html">
+</amp-social-share>
+</div>
+<div role="button" aria-label="open sidebar" class="header-toggle-button hidden-d" tabindex="0" on="tap:main-sidebar.open" title="Despliega buscador">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+<g>
+<rect x="0" y="277.333" width="384" height="42.667" />
+<rect x="0" y="170.667" width="384" height="42.667" />
+<rect x="0" y="64" width="384" height="42.667" />
+</g>
+</svg>
+</div>
+</div>
+</div>
+<div class="sub-header hidden-m">
+<div class="container ">
+<nav role="navigation">
+<ul class="main-nav main-menu" id="main-menu">
+<li><a href="/local/" title="Link a sección Local">Local</a></li>
+<li><a href="/seguridad/" title="Link a sección Seguridad">Seguridad</a></li>
+<li><a href="/nacional/" title="Link a sección Nacional">Nacional</a></li>
+<li><a href="/global/" title="Link a sección Global">Global</a></li>
+<li><a href="/opinion/" title="Link a tema Opinión">Opinión</a></li>
+<li><a href="/show/" title="Link a sección Show">Show</a></li>
+<li><a href="/tendencia/" title="Link a sección Tendencia">Tendencia</a></li>
+<li><a href="/negocios/" title="Link a Negocios">Negocios</a></li>
+<li><a href="/deportes/" title="ABC Deportes">ABC Deportes</a></li>
+
+<li><a href="/noticias/edicionimpresa.html?id_categoria=1151" title="Link a tema Suplementos">Suplementos</a></li>
+
+<li><a href="/noticias/edicionimpresa.html?id_categoria=1149" title="Link a tema Edición impresa">ePaper</a></li>
+
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div class="titulo-seccion id_seccion_3">
+</div>
+<div class="helper id_seccion_3"></div>
+<amp-lightbox id="lightbox-buscador" layout="nodisplay">
+<div class="lightbox-buscador">
+<button on="tap:lightbox-buscador.close" id="x-sliding-buscador">
+<amp-img src="/u/plantillas/imgs/close-circular-icon.svg" width="50px" height="50px" layout="responsive" alt="Cerrar buscador" class="ico-cerrar">
+</amp-img>
+</button>
+<form action="/noticias/buscar/" method="GET" action="/noticias/buscar/" target="_top" class="el-buscador">
+<div class="sliding-buscador--header"><h2 class="titulo-buscar">Buscar</h2></div>
+<div class="search-group f">
+<input class="input-buscar" type="search" name="buscar" placeholder="Busque noticias desde aquí">
+<button class="btn-submit" type="submit">
+<amp-img src="/u/plantillas/imgs/ico-buscador.svg" width="20px" height="20px" layout="responsive" alt="Buscar" class="ico-lupa">
+</amp-img>
+</button>
+</div>
+</form>
+</div>
+</amp-lightbox><amp-sidebar id="main-sidebar" class="main-sidebar" layout="nodisplay" side="left">
+<div role="button" on="tap:main-sidebar.toggle" tabindex="0" class="close-sidebar">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="16" height="16">
+<g>
+<path class="close-sidebar--path" d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			 L284.286,256.002z" />
+</g>
+</svg>
+</div>
+<nav class="navbar" role="navigation">
+<nav role="navigation">
+<ul class="main-nav main-menu" id="main-menu">
+<li><a href="/local/" title="Link a sección Local">Local</a></li>
+<li><a href="/seguridad/" title="Link a sección Seguridad">Seguridad</a></li>
+<li><a href="/nacional/" title="Link a sección Nacional">Nacional</a></li>
+<li><a href="/global/" title="Link a sección Global">Global</a></li>
+<li><a href="/opinion/" title="Link a tema Opinión">Opinión</a></li>
+<li><a href="/show/" title="Link a sección Show">Show</a></li>
+<li><a href="/tendencia/" title="Link a sección Tendencia">Tendencia</a></li>
+<li><a href="/negocios/" title="Link a Negocios">Negocios</a></li>
+<li><a href="/deportes/" title="ABC Deportes">ABC Deportes</a></li>
+
+<li><a href="/noticias/edicionimpresa.html?id_categoria=1151" title="Link a tema Suplementos">Suplementos</a></li>
+
+<li><a href="/noticias/edicionimpresa.html?id_categoria=1149" title="Link a tema Edición impresa">ePaper</a></li>
+
+</ul>
+</nav>
+<div class="icolinks">
+<a href="/p/institucional/abc-radio-player.html" title="Radio">
+<svg id="Capa_1" enable-background="new 0 0 512 512" width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m136 265.002c-39.149 0-71 31.851-71 71s31.851 71 71 71 71-31.851 71-71-31.851-71-71-71zm0 112c-22.607 0-41-18.393-41-41s18.393-41 41-41 41 18.393 41 41-18.393 41-41 41z" /><path d="m432 281.002h-160c-8.284 0-15 6.716-15 15s6.716 15 15 15h160c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m432 361.002h-160c-8.284 0-15 6.716-15 15s6.716 15 15 15h160c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m452 105.002h-9.744l-205.845-63.337c-7.916-2.436-16.312 2.008-18.748 9.926s2.008 16.312 9.926 18.748l112.655 34.663h-280.244c-33.084 0-60 26.916-60 60v246c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60 0-7.806 0-242.525 0-246 0-33.084-26.916-60-60-60zm-422 60c0-16.542 13.458-30 30-30h392c16.542 0 30 13.458 30 30v36h-331v-17c0-8.284-6.716-15-15-15s-15 6.716-15 15v17h-91zm422 276h-392c-16.542 0-30-13.458-30-30v-180h452v180c0 16.542-13.458 30-30 30z" /></g></svg>
+<span>Radio</span>
+</a>
+<a href="/noticias/edicionimpresa.html?id_categoria=1149" title="Versión Impresa">
+<svg id="Capa_1" enable-background="new 0 0 512 512" width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m497 121h-114v-89c0-8.284-6.716-15-15-15h-353c-8.284 0-15 6.716-15 15v388c0 41.355 33.645 75 75 75h362c41.355 0 75-33.645 75-75v-284c0-8.284-6.716-15-15-15zm-422 344c-24.813 0-45-20.187-45-45v-373h323c0 396.466-.189 374.424.344 380.077 1.304 13.906 6.49 27.019 14.691 37.923zm407-45c0 24.813-20.187 45-45 45-3.366 0-5.695 0-9 0-24.813 0-45-20.187-45-45v-269h99z" /><path d="m304 89h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 153h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 393h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 217h-112c-8.284 0-15 6.716-15 15v112c0 8.284 6.716 15 15 15h112c8.284 0 15-6.716 15-15v-112c0-8.284-6.716-15-15-15zm-15 112h-82v-82h82z" /><path d="m80 271h48c8.284 0 15-6.716 15-15s-6.716-15-15-15h-48c-8.284 0-15 6.716-15 15s6.716 15 15 15z" /><path d="m80 335h48c8.284 0 15-6.716 15-15s-6.716-15-15-15h-48c-8.284 0-15 6.716-15 15s6.716 15 15 15z" /></g></svg>
+<span>ePaper</span>
+</a>
+
+</div>
+</nav>
+<div class="sliding-menu--footer">
+<div class="sliding-menu--redes">
+<span>Síguenos</span>
+<ul class="redes-sociales">
+<li>
+<a href="https://www.facebook.com/abcnoticiasmty/" target="_blank" rel="noopener" title="Link a Facebook">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.227px" height="96.227px" viewBox="0 0 96.227 96.227" style="enable-background:new 0 0 96.227 96.227;" xml:space="preserve">
+<g>
+<path d="M73.099,15.973l-9.058,0.004c-7.102,0-8.477,3.375-8.477,8.328v10.921h16.938l-0.006,17.106H55.564v43.895H37.897V52.332
+        h-14.77V35.226h14.77V22.612C37.897,7.972,46.84,0,59.9,0L73.1,0.021L73.099,15.973L73.099,15.973z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/ABCNoticiasMX" target="_blank" rel="noopener" title="Link a Twitter">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.637px" height="97.637px" viewBox="0 0 97.637 97.637" style="enable-background:new 0 0 97.637 97.637;" xml:space="preserve">
+<path d="M97.523,18.526c-0.14-0.165-0.371-0.221-0.568-0.131c-2.919,1.295-5.99,2.226-9.153,2.776
+          c3.358-2.526,5.86-6.024,7.143-10.035c0.062-0.192-0.002-0.402-0.159-0.527c-0.158-0.125-0.377-0.141-0.55-0.038
+          c-3.782,2.243-7.878,3.824-12.18,4.701c-3.812-3.956-9.135-6.219-14.644-6.219c-11.204,0-20.318,9.114-20.318,20.317
+          c0,1.355,0.131,2.697,0.391,4c-15.518-0.958-30.028-8.408-39.894-20.509c-0.101-0.124-0.254-0.193-0.414-0.177
+          c-0.159,0.012-0.301,0.102-0.381,0.239c-1.8,3.088-2.751,6.621-2.751,10.215c0,6.229,2.83,12.053,7.649,15.896
+          c-2.481-0.298-4.904-1.079-7.089-2.292c-0.147-0.083-0.33-0.082-0.477,0.003c-0.147,0.084-0.24,0.24-0.244,0.41l-0.002,0.26
+          c0,8.946,5.895,16.801,14.282,19.409c-2.209,0.356-4.501,0.332-6.754-0.098c-0.166-0.031-0.34,0.026-0.454,0.154
+          c-0.113,0.128-0.151,0.307-0.099,0.469c2.515,7.85,9.503,13.355,17.637,14.041c-6.785,4.971-14.805,7.59-23.279,7.59
+          c-1.561,0-3.133-0.093-4.673-0.274c-0.22-0.025-0.438,0.106-0.514,0.317c-0.076,0.213,0.005,0.451,0.195,0.572
+          c9.17,5.881,19.773,8.988,30.664,8.988c35.625,0,56.913-28.938,56.913-56.914c0-0.779-0.015-1.554-0.046-2.327
+          c3.843-2.811,7.142-6.252,9.802-10.235C97.675,18.929,97.662,18.692,97.523,18.526z" />
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCcG_he6skdxpcmeTyv97cgA" target="_blank" rel="noopener" title="Link a Youtube">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.875px" height="96.875px" viewBox="0 0 96.875 96.875" style="enable-background:new 0 0 96.875 96.875;" xml:space="preserve">
+<g>
+<path d="M95.201,25.538c-1.186-5.152-5.4-8.953-10.473-9.52c-12.013-1.341-24.172-1.348-36.275-1.341
+       c-12.105-0.007-24.266,0-36.279,1.341c-5.07,0.567-9.281,4.368-10.467,9.52C0.019,32.875,0,40.884,0,48.438
+       C0,55.992,0,64,1.688,71.336c1.184,5.151,5.396,8.952,10.469,9.52c12.012,1.342,24.172,1.349,36.277,1.342
+       c12.107,0.007,24.264,0,36.275-1.342c5.07-0.567,9.285-4.368,10.471-9.52c1.689-7.337,1.695-15.345,1.695-22.898
+       C96.875,40.884,96.889,32.875,95.201,25.538z M35.936,63.474c0-10.716,0-21.32,0-32.037c10.267,5.357,20.466,10.678,30.798,16.068
+       C56.434,52.847,46.23,58.136,35.936,63.474z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/abcnoticiasmx/" target="_blank" rel="noopener" title="Link a Instagram">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px" height="97.395px" viewBox="0 0 97.395 97.395" style="enable-background:new 0 0 97.395 97.395;" xml:space="preserve">
+<g>
+<path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
+            V12.5C0,5.09,5.624,0,12.501,0L12.501,0z M70.948,10.821c-2.412,0-4.383,1.972-4.383,4.385v10.495c0,2.412,1.971,4.385,4.383,4.385
+            h11.008c2.412,0,4.385-1.973,4.385-4.385V15.206c0-2.413-1.973-4.385-4.385-4.385H70.948L70.948,10.821z M86.387,41.188h-8.572
+            c0.811,2.648,1.25,5.453,1.25,8.355c0,16.2-13.556,29.332-30.275,29.332c-16.718,0-30.272-13.132-30.272-29.332
+            c0-2.904,0.438-5.708,1.25-8.355h-8.945v41.141c0,2.129,1.742,3.872,3.872,3.872h67.822c2.13,0,3.872-1.742,3.872-3.872V41.188
+            H86.387z M48.789,29.533c-10.802,0-19.56,8.485-19.56,18.953c0,10.468,8.758,18.953,19.56,18.953
+            c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.tiktok.com/@abcnoticiasmty" target="_blank" rel="noopener" title="Link a TikTok">
+<svg xmlns="http://www.w3.org/2000/svg" width="97.395px" height="97.395px" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" /></svg>
+</a>
+</li>
+</ul>
+</div>
+<div class="sliding-menu--otroslinks">
+<a href="/" class="top-bar--link-contacto" title="Suscripción al newsletter">Suscríbete a newsletter</a>
+<a href="/contacto/" class="top-bar--link-contacto" title="Link a contacto">Contactanos</a>
+</div>
+<form action="/noticias/buscar/" method="GET" action="/noticias/buscar/" target="_top" class="el-buscador">
+<div class="search-group f">
+<input class="input-buscar" type="search" name="buscar" placeholder="Busque noticias desde aquí">
+<button class="btn-submit" type="submit">
+<amp-img src="/u/plantillas/imgs/ico-buscador.svg" width="20px" height="20px" layout="responsive" alt="Buscar" class="ico-lupa">
+</amp-img>
+</button>
+</div>
+</form>
+</div>
+</amp-sidebar>
+<div class="main-container">
+<div class="content-banner hidden-m"><amp-ad width=970 height=90 type="doubleclick" data-slot="/22564172710/inicio940" data-multi-size="728x90" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'> </amp-ad></div>
+<div class="row">
+<div class="col--main">
+<section class="main-section">
+<article class="main-article">
+<header class="main-article--header">
+<strong class="antetitulo"></strong>
+<h1 class="titulo">El lente fronterizo de Venegas</h1>
+<h2 class="bajada">Yvonne Venegas juega a fotografiar los límites. Nacida en Tijuana, las fronteras forman parte su vocabulario artístico que se ubica entre la realidad y la ficción, el gesto la pose, ella misma y su gemela Julieta… Ahora que prepara una serie sobre San Pedro, recibió al <strong>ABC</strong> para platicar sobre su obra.</h2>
+</header>
+<div class="margen-top1">
+<div class="content-banner hidden-d"><amp-ad width=336 height=280 type="doubleclick" data-slot="/22564172710/amp_top(1)" data-multi-size="300x250" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'>
+</amp-ad>
+<amp-analytics type="cxense">
+<script type="application/json">
+        {
+            "vars": {
+                "siteId": "1134080978869758071"
+            }
+        }
+    </script>
+</amp-analytics>
+</div>
+</div>
+<div class="main-article--body">
+<figure class="main-photo">
+<amp-img width="960" height="540" media="(min-width: 426px)" layout="responsive" src="/u/fotografias/m/2015/12/3/f960x540-38456_112531_0.jpg" alt="" data-amp-auto-lightbox-disable></amp-img>
+<amp-img width="425" height="230" layout="responsive" media="(max-width: 426px)" src="/u/fotografias/m/2015/12/3/f425x230-38456_52438_0.jpg" alt="" data-amp-auto-lightbox-disable></amp-img>
+<figcaption class="epigrafe"></figcaption>
+</figure>
+<div class="article-content">
+<div class="article-content--autor">
+<div class="el-autor">
+<div class="nombre-autor">
+Por <span class="post-author-name change-utf" itemprop="name">Clavdio Lizarraga</span>
+</div>
+</div>
+<div class="article-content--fecha">
+<span class="escrito">Escrito en </span>
+<span class="seccion">SHOW</span>
+<span class="el">el</span>
+<time class="fecha-time" itemprop="datePublished" datetime="2015-12-3T21:17:00">3/12/2015 &middot; 21:17 hs</time>
+</div>
+</div>
+<div class="share-group">
+<span class="txt">Comparta este artículo</span>
+<amp-social-share type="facebook" width="20" height="20" layout="responsive" class="share-icon--fb" data-param-app_id="" data-param-url="https://abcnoticias.mx/show/2015/12/3/el-lente-fronterizo-de-venegas-38539.html">
+</amp-social-share>
+<amp-social-share type="twitter" width="20" height="20" layout="responsive" class="share-icon--tw" data-param-url="https://abcnoticias.mx/show/2015/12/3/el-lente-fronterizo-de-venegas-38539.html">
+</amp-social-share>
+<amp-social-share type="whatsapp" width="20" height="20" layout="responsive" class="share-icon--wa" data-param-url="https://abcnoticias.mx/show/2015/12/3/el-lente-fronterizo-de-venegas-38539.html">
+</amp-social-share>
+</div><div class="content-banner hidden-d"><amp-ad width=336 height=280 type="doubleclick" data-slot="/22564172710/amp_middle(1)" data-multi-size="300x250,320x100,320x480" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'>
+</amp-ad></div>
+<div class="article-content--cuerpo">
+<p><strong>Monterrey.-</strong>La cámara del fotorreportero sale cuando la fotógrafa la guarda. Yvonne se ha encargado de encontrar vulnerables a sus sujetos. En sus palabras, homenajear lo humano es homenajear la vulnerabilidad. Y eso es lo que busca en sus series: los interludios en los que la gente no está preparada para la cámara. Así atrapó en negativo a la familia Hank Rohn, al elenco de la novela Rebelde, a Julieta Venegas... y así pretende encontrar desprevenido a un San Pedro, cuya identidad la tiene atrapada. La cámara sale, y espero que Yvonne esté desprevenida también.</p><p><strong>—Siendo tú tijuanense, distingo la frontera como tema en tu obra. ¿Te sientes cómoda trabajando en estas líneas separatorias? </strong></p><p>—Todo mi discurso se ha construido en esa dualidad tanto con las personas como con los momentos que me gustan. El libro de Gestus es sobre el retrato pero están estas dos posibilidades: no solo el retrato por sí solo, también está mi experiencia en las diferentes capas. Ves afuera y adentro. No nada más es la frontera geográfica, también es mi gemela, también es mi papá —igualmente fotógrafo—. He vivido entre estas dos posibilidades siempre y sí me gusta la ambigüedad, es parte de mi experiencia como fronteriza tener esos dos lados.</p><p><strong>—Yo cuando vi tus fotos, te desacredité de inmediato, pero considero un logro periodístico que tu estética logre un interés para segundas lecturas sobre temas como las clases sociales y la construcción de la identidad. </strong></p><p>—Mucha gente hace lo mismo. Pero no son periodísticas nunca. Al final, el periodismo se trata de este momento, este segundo, y yo pienso: later, en el futuro. Sí es un discurso difícil de entender. Me pasó lo mismo con el disco de Kid A, de Radiohead. Pensé: están locos, están mal de la cabeza. Y luego no lo puedo quitar. Quiero escucharlo otra vez.</p><p>[attach_entity|type=inline_element|id=14086]</p><p><strong>—Veo en tu Twitter una panorámica de San Pedro. Ahora que preparas una serie sobre el municipio, ¿qué encontraste por acá que te atrajo tanto? </strong></p><p>—Me gusta trabajar con sujetos de los que aprendo, con los que siento que voy a crecer. Así fue con María Elvia de Hank; ahora pasamos de sus 60 hectáreas a 150 mil habitantes. Llegas por curiosidad pero se va volviendo más complejo con el tiempo. Lo que me pasó con San Pedro es como una relación de largo plazo, donde a veces dices “pinche güey” pero luego es amor absoluto. Ese ir y venir de sentimientos es lo que me mantiene agarrada.<p><strong>—Platícame de esos dos San Pedros, del San Pedro te-amo-te-adoro y del otro. </strong><p>—Hay un lado interesado en la apariencia, que es el ""pinche güey"". Pero ambos me han dado mucho, no me puedo quejar de ningún lado, hay frustración en todas las relaciones. Al final, no me interesan los polos.<p><strong>—Tú estás en la frontera.</strong><p>[attach_entity|type=inline_element|id=14087]<p>&nbsp;<p>—Exacto. Es ambicioso porque de pronto es como juntar agua y aceite, pero ese es el reto: hacer algo sobre San Pedro y sobre lo que yo vivo aquí.<p><strong>—¿Los regios construimos nuestra identidad a partir de nuestras fotos? </strong><p>—Existe una relación especial con la cámara. Cuando llegué, lo primero con lo que me topé fueron las revistas de sociales. Me dijo una persona: ¿quieres conocer a San Pedro? Y sacó un altero de revistas de sociales y me dijo: aquí está la onda. Forma parte de la comunicación como comunidad. Es como si Facebook hubiera existido desde el '72. Ser visto tiene un significado. Entonces, sí, porque hay gente que no quiere aparecer en estas revistas, y decir que no también construye la identidad.<p><strong>—Aplaudo que eres firme todavía con el uso del negativo: 6x7 en blanco y negro. </strong><p>—Empecé un proyecto nuevo, igual en San Pedro, sobre hombres líderes, aunque la palabra ""líder"" no les encanta a todos. Le digo a Mauricio Fernández que lo quiero fotografiar a él y a sus amigos. Pero me dice ""pues... líderes... no sé, ‘caón’"". Lo empecé a hacer en digital porque para mí era un ejercicio, pero me dieron la beca del Fonca y cambié a 35 milímetros, Portra 800 de Kodak, color, para volverlo todavía más vulnerable. El digital lo hace muy limpio todo.<p>Se apaga la grabadora y salen reportero, fotógrafo e Yvonne del auditorio. Hay una pared de ladrillos blanca. Mide la luz y el fotógrafo la previene de frente contra la pared. Ni tan vulnerable: se esperaba el disparo. Ni modo, será para la otra.<p>[attach_entity|type=inline_element|id=14090]
+
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<aside class="col--sidebar hidden-m">
+<div class="content-banner hidden-m"><amp-ad width=300 height=250 type="doubleclick" data-slot="/22564172710/derecha(1)" data-multi-size="336x280,300x600,320x480" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'>
+</amp-ad></div><div class="content-banner hidden-m"><amp-ad width=300 height=250 type="doubleclick" data-slot="/22564172710/derecha(2)" data-multi-size="336x280,300x600" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'> </amp-ad></div>
+</aside>
+</div>
+<aside class="aside-section main-ampbottom">
+<div class="content-banner hidden-d"><amp-ad width=336 height=280 type="doubleclick" data-slot="/22564172710/amp_bottom(1)" data-multi-size="300x250,320x100" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'> </amp-ad></div> <div class="content-modulo">
+<section class="nrel ">
+<h3 class="mod__titulo">Más noticias</h3>
+<div class="nrel--group">
+<amp-list src="/a/aps/noticias/dinamicos/ajax/amp-list-otros-sitios.asp?idm=12&ids=1" noloading width="auto" height="350" binding="no" load-more="auto" load-more-bookmark="siguiente">
+<div placeholder class="nrel-placeholder">
+<div class="lds-dual-ring"></div>
+</div>
+<template type="amp-mustache">
+<div class="row">
+<div class="nrel--row">
+{{#noticias}}
+<div class="nrel--noticia {{csssolom}}">
+<a href="{{link-url}}" title="{{titulo-portada}}" class="nrel--link-img">
+{{#imagen-m}}
+<amp-img class="nrel--foto imagen-m" layout="responsive" alt="{{titulo-noticia}}" width="400" height="300" src="{{imagen-m}}"></amp-img>
+<amp-img class="nrel--foto imagen-d" layout="responsive" alt="{{titulo-noticia}}" width="400" height="225" src="{{imagen-d}}"></amp-img>
+{{/imagen-m}}
+</a>
+<div class="nrel--txt">
+<h4 class="nrel--titulo-noticia">
+<a class="nrel--link-titulo" href="{{link-url}}">{{titulo-noticia}}</a>
+</h4>
+<div class="nrel--article-footer">
+<small class="nrel-autor">
+{{#fecha-p}}
+<amp-timeago layout="responsive" width="160" height="21" datetime="{{fecha}}" locale="es" cutoff="259200">
+<span>{{fecha-p}} </span>
+</amp-timeago>
+{{/fecha-p}}
+<amp-social-share type="system" width="16" height="16" data-param-text="Compartir el artículo" data-param-url="{{link-url}}">
+</amp-social-share>
+</small>
+</div>
+</div>
+</div>
+{{/noticias}}
+</div>
+{{#noticias}}
+{{/noticias}}
+</template>
+<amp-list-load-more load-more-loading>
+<div class="btn-mas-noticias">Cargando</div>
+</amp-list-load-more>
+<amp-list-load-more load-more-end>
+<div></div>
+</amp-list-load-more>
+<amp-list-load-more load-more-failed>
+<div class="btn-mas-noticias">Ops!</div>
+</amp-list-load-more>
+<amp-list-load-more load-more-button>
+<div class="btn-mas-noticias">Mas Noticias</div>
+</amp-list-load-more>
+</amp-list>
+</div>
+</section>
+</div><div class="content-modulo">
+<section class="nrel amp-list mas_noticias_misma_seccion">
+<h3 class="mod__titulo">Más noticias</h3>
+<div class="nrel--group">
+<amp-list src="/a/aps/noticias/dinamicos/ajax/amp-list.asp?page=1&ids=3&idm=1" noloading width="auto" height="350" binding="no" load-more="auto" load-more-bookmark="siguiente">
+<div placeholder class="nrel-placeholder">
+<div class="lds-dual-ring"></div>
+</div>
+<template type="amp-mustache">
+<div class="row">
+<div class="nrel--row">
+{{#noticias}}
+<div class="nrel--noticia">
+<a href="{{link-url}}" title="{{titulo-portada}}" class="nrel--link-img">
+{{#imagen-m}}
+<amp-img class="nrel--foto imagen-m" layout="responsive" alt="{{titulo-noticia}}" width="400" height="300" src="{{imagen-m}}"></amp-img>
+<amp-img class="nrel--foto imagen-d" layout="responsive" alt="{{titulo-noticia}}" width="400" height="225" src="{{imagen-d}}"></amp-img>
+{{/imagen-m}}
+</a>
+<div class="nrel--txt">
+<h4 class="nrel--titulo-noticia">
+<a class="nrel--link-titulo" href="{{link-url}}">{{titulo-noticia}}</a>
+</h4>
+<div class="nrel--article-footer">
+<small class="nrel-autor">
+{{#fecha-p}}
+<amp-timeago layout="responsive" width="160" height="21" datetime="{{fecha}}" locale="es-MX" cutoff="259200">
+<span>{{fecha-p}} </span>
+</amp-timeago>
+{{/fecha-p}}
+<amp-social-share type="system" width="16" height="16" data-param-text="Compartir el artículo" data-param-url="{{link-url}}">
+</amp-social-share>
+</small>
+</div>
+</div>
+</div>
+{{/noticias}}
+</div>
+{{#noticias}}
+{{#anuncio}}
+<div class="hidden-d nrel--row--bnn">
+<div class="content-banner"><amp-ad width=336 height=280 type="doubleclick" data-slot="/22564172710/amp_bottom(2)" data-multi-size="300x250,320x100" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"],"autor":["No es Noticia"],"cfg_adx":["on"],"id_noticia":["n38539"],"temas":["Sin Tema"],"tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'> </amp-ad></div>
+</div>
+<div class="hidden-m nrel--row--bnn" style="width:100%">
+<div class="content-banner"><amp-ad width=300 height=250 type="doubleclick" data-slot="/22564172710/derecha(7)" data-multi-size="336x280,300x600" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"],"autor":["No es Noticia"],"cfg_adx":["on"],"id_noticia":["n38539"],"temas":["Sin Tema"],"tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'> </amp-ad></div>
+</div>
+{{/anuncio}}
+{{/noticias}}
+</template>
+<amp-list-load-more load-more-loading></amp-list-load-more>
+<amp-list-load-more load-more-end></amp-list-load-more>
+<amp-list-load-more load-more-failed></amp-list-load-more>
+<amp-list-load-more load-more-button>
+<div class="btn-mas-noticias">Mas Noticias</div>
+</amp-list-load-more>
+</amp-list>
+</div>
+</section>
+</div><div class="content-banner hidden-d"><amp-ad width=336 height=280 type="doubleclick" data-slot="/22564172710/amp_footer" data-multi-size="300x250,320x100" data-multi-size-validation="false" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'> </amp-ad></div><div class="content-banner hidden-d"><amp-sticky-ad layout="nodisplay"> <amp-ad width=320 height=100 type="doubleclick" data-slot="/22564172710/sticky_movil" json='{"targeting":{"sitio":["abc-noticias"],"seccion":["show"], "autor":["No es Noticia"],"cfg_adx":["on"], "id_noticia":["n38539"], "temas":["Sin Tema"], "tema_oculto":[""]}}' rtc-config='{"vendors": { "aps": {"PUB_ID": "600", "PUB_UUID": "ece10a4c-04c3-47ef-ae7a-6d2c07b8a551", "PARAMS":{"amp":"1"}} }}'> </amp-ad> </amp-sticky-ad></div>
+</aside>
+</div>
+<footer class="main-footer">
+<div class="footer-zona-1">
+<div class="container">
+<div class="row">
+<div class="col-logo">
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/main-logo.svg?vok" class="footer-logo-img" width="160" height="87" layout="responsive" alt="abc-noticias.mx">
+</amp-img>
+</div>
+<div class="col-redes">
+<div class="icolinks">
+<a href="/p/institucional/abc-radio-player.html" title="Radio">
+<svg id="Capa_1" enable-background="new 0 0 512 512" width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m136 265.002c-39.149 0-71 31.851-71 71s31.851 71 71 71 71-31.851 71-71-31.851-71-71-71zm0 112c-22.607 0-41-18.393-41-41s18.393-41 41-41 41 18.393 41 41-18.393 41-41 41z" /><path d="m432 281.002h-160c-8.284 0-15 6.716-15 15s6.716 15 15 15h160c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m432 361.002h-160c-8.284 0-15 6.716-15 15s6.716 15 15 15h160c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m452 105.002h-9.744l-205.845-63.337c-7.916-2.436-16.312 2.008-18.748 9.926s2.008 16.312 9.926 18.748l112.655 34.663h-280.244c-33.084 0-60 26.916-60 60v246c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60 0-7.806 0-242.525 0-246 0-33.084-26.916-60-60-60zm-422 60c0-16.542 13.458-30 30-30h392c16.542 0 30 13.458 30 30v36h-331v-17c0-8.284-6.716-15-15-15s-15 6.716-15 15v17h-91zm422 276h-392c-16.542 0-30-13.458-30-30v-180h452v180c0 16.542-13.458 30-30 30z" /></g></svg>
+<span>Radio</span>
+</a>
+<a href="/noticias/edicionimpresa.html?id_categoria=1149" title="Versión Impresa">
+<svg id="Capa_1" enable-background="new 0 0 512 512" width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m497 121h-114v-89c0-8.284-6.716-15-15-15h-353c-8.284 0-15 6.716-15 15v388c0 41.355 33.645 75 75 75h362c41.355 0 75-33.645 75-75v-284c0-8.284-6.716-15-15-15zm-422 344c-24.813 0-45-20.187-45-45v-373h323c0 396.466-.189 374.424.344 380.077 1.304 13.906 6.49 27.019 14.691 37.923zm407-45c0 24.813-20.187 45-45 45-3.366 0-5.695 0-9 0-24.813 0-45-20.187-45-45v-269h99z" /><path d="m304 89h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 153h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 393h-224c-8.284 0-15 6.716-15 15s6.716 15 15 15h224c8.284 0 15-6.716 15-15s-6.716-15-15-15z" /><path d="m304 217h-112c-8.284 0-15 6.716-15 15v112c0 8.284 6.716 15 15 15h112c8.284 0 15-6.716 15-15v-112c0-8.284-6.716-15-15-15zm-15 112h-82v-82h82z" /><path d="m80 271h48c8.284 0 15-6.716 15-15s-6.716-15-15-15h-48c-8.284 0-15 6.716-15 15s6.716 15 15 15z" /><path d="m80 335h48c8.284 0 15-6.716 15-15s-6.716-15-15-15h-48c-8.284 0-15 6.716-15 15s6.716 15 15 15z" /></g></svg>
+<span>ePaper</span>
+</a>
+
+</div>
+<ul class="redes-sociales">
+<li>
+<a href="https://www.facebook.com/abcnoticiasmty/" target="_blank" rel="noopener" title="Link a Facebook">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.227px" height="96.227px" viewBox="0 0 96.227 96.227" style="enable-background:new 0 0 96.227 96.227;" xml:space="preserve">
+<g>
+<path d="M73.099,15.973l-9.058,0.004c-7.102,0-8.477,3.375-8.477,8.328v10.921h16.938l-0.006,17.106H55.564v43.895H37.897V52.332
+        h-14.77V35.226h14.77V22.612C37.897,7.972,46.84,0,59.9,0L73.1,0.021L73.099,15.973L73.099,15.973z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/ABCNoticiasMX" target="_blank" rel="noopener" title="Link a Twitter">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.637px" height="97.637px" viewBox="0 0 97.637 97.637" style="enable-background:new 0 0 97.637 97.637;" xml:space="preserve">
+<path d="M97.523,18.526c-0.14-0.165-0.371-0.221-0.568-0.131c-2.919,1.295-5.99,2.226-9.153,2.776
+          c3.358-2.526,5.86-6.024,7.143-10.035c0.062-0.192-0.002-0.402-0.159-0.527c-0.158-0.125-0.377-0.141-0.55-0.038
+          c-3.782,2.243-7.878,3.824-12.18,4.701c-3.812-3.956-9.135-6.219-14.644-6.219c-11.204,0-20.318,9.114-20.318,20.317
+          c0,1.355,0.131,2.697,0.391,4c-15.518-0.958-30.028-8.408-39.894-20.509c-0.101-0.124-0.254-0.193-0.414-0.177
+          c-0.159,0.012-0.301,0.102-0.381,0.239c-1.8,3.088-2.751,6.621-2.751,10.215c0,6.229,2.83,12.053,7.649,15.896
+          c-2.481-0.298-4.904-1.079-7.089-2.292c-0.147-0.083-0.33-0.082-0.477,0.003c-0.147,0.084-0.24,0.24-0.244,0.41l-0.002,0.26
+          c0,8.946,5.895,16.801,14.282,19.409c-2.209,0.356-4.501,0.332-6.754-0.098c-0.166-0.031-0.34,0.026-0.454,0.154
+          c-0.113,0.128-0.151,0.307-0.099,0.469c2.515,7.85,9.503,13.355,17.637,14.041c-6.785,4.971-14.805,7.59-23.279,7.59
+          c-1.561,0-3.133-0.093-4.673-0.274c-0.22-0.025-0.438,0.106-0.514,0.317c-0.076,0.213,0.005,0.451,0.195,0.572
+          c9.17,5.881,19.773,8.988,30.664,8.988c35.625,0,56.913-28.938,56.913-56.914c0-0.779-0.015-1.554-0.046-2.327
+          c3.843-2.811,7.142-6.252,9.802-10.235C97.675,18.929,97.662,18.692,97.523,18.526z" />
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCcG_he6skdxpcmeTyv97cgA" target="_blank" rel="noopener" title="Link a Youtube">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.875px" height="96.875px" viewBox="0 0 96.875 96.875" style="enable-background:new 0 0 96.875 96.875;" xml:space="preserve">
+<g>
+<path d="M95.201,25.538c-1.186-5.152-5.4-8.953-10.473-9.52c-12.013-1.341-24.172-1.348-36.275-1.341
+       c-12.105-0.007-24.266,0-36.279,1.341c-5.07,0.567-9.281,4.368-10.467,9.52C0.019,32.875,0,40.884,0,48.438
+       C0,55.992,0,64,1.688,71.336c1.184,5.151,5.396,8.952,10.469,9.52c12.012,1.342,24.172,1.349,36.277,1.342
+       c12.107,0.007,24.264,0,36.275-1.342c5.07-0.567,9.285-4.368,10.471-9.52c1.689-7.337,1.695-15.345,1.695-22.898
+       C96.875,40.884,96.889,32.875,95.201,25.538z M35.936,63.474c0-10.716,0-21.32,0-32.037c10.267,5.357,20.466,10.678,30.798,16.068
+       C56.434,52.847,46.23,58.136,35.936,63.474z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/abcnoticiasmx/" target="_blank" rel="noopener" title="Link a Instagram">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px" height="97.395px" viewBox="0 0 97.395 97.395" style="enable-background:new 0 0 97.395 97.395;" xml:space="preserve">
+<g>
+<path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
+            V12.5C0,5.09,5.624,0,12.501,0L12.501,0z M70.948,10.821c-2.412,0-4.383,1.972-4.383,4.385v10.495c0,2.412,1.971,4.385,4.383,4.385
+            h11.008c2.412,0,4.385-1.973,4.385-4.385V15.206c0-2.413-1.973-4.385-4.385-4.385H70.948L70.948,10.821z M86.387,41.188h-8.572
+            c0.811,2.648,1.25,5.453,1.25,8.355c0,16.2-13.556,29.332-30.275,29.332c-16.718,0-30.272-13.132-30.272-29.332
+            c0-2.904,0.438-5.708,1.25-8.355h-8.945v41.141c0,2.129,1.742,3.872,3.872,3.872h67.822c2.13,0,3.872-1.742,3.872-3.872V41.188
+            H86.387z M48.789,29.533c-10.802,0-19.56,8.485-19.56,18.953c0,10.468,8.758,18.953,19.56,18.953
+            c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z" />
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.tiktok.com/@abcnoticiasmty" target="_blank" rel="noopener" title="Link a TikTok">
+<svg xmlns="http://www.w3.org/2000/svg" width="97.395px" height="97.395px" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" /></svg>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-zona-2">
+<div class="container">
+<div class="row">
+<div class="col-logos-group">
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/epsilon-media-group.svg" width="180" height="56" layout="fixed" alt="Epsilon Media Group" class="img-epsilon-img">
+</amp-img>
+<div class="logos-group">
+<a href="http://www.gruporadioalegria.mx/" target="_blank" rel="noopener" title="gruporadioalegria.mx">
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/grupo-radio-alegria.svg" width="62" height="60" layout="fixed" alt="Grupo Radio Alegría" class="logos-group--img1">
+</amp-img>
+</a>
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/abcimpresos.svg" width="65" height="60" layout="fixed" alt="ABC Impresos" class="logos-group--img2">
+</amp-img>
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/abcnoticias.svg" width="64" height="60" layout="fixed" alt="ABC Noticias" class="logos-group--img3">
+</amp-img>
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/epsilon-entertainment.svg" width="54" height="60" layout="fixed" alt="Epsilon Entertainment" class="logos-group--img4">
+</amp-img>
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/abcdeportes.svg" alt="ABC Deportes" width="61" height="60" layout="fixed" class="logo-abcdeportes">
+</amp-img>
+</div>
+</div>
+<div class="col-logos-radios">
+<strong>Nuestras emisoras</strong>
+<div class="los-logos">
+
+<a href="https://radio.digital1029.fm/" target="_blank" rel="noopener" title="digital1029">
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/digital-102-9.svg" alt="digital1029" width="108" height="55" layout="fixed" class="logo-radio2">
+</amp-img>
+</a>
+<a href="https://radio.lasabrosita.fm/" target="_blank" rel="noopener" title="la sabrosita">
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/la-sabrosita.svg" alt="sabrosita" width="112" height="55" layout="fixed" class="logo-radio3">
+</amp-img>
+</a>
+<a href="https://radio.premier917.fm/" target="_blank" rel="noopener" title="premier917">
+<amp-img src="/u/plantillas/p/abc-noticias/imgs/footer-logos/premier.svg" alt="premier-917" width="70" height="55" layout="fixed" class="logo-radio4">
+</amp-img>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-zona-3">
+<div class="container">
+<div class="row">
+<div class="col-copy">
+<p>© 2023&nbsp;&nbsp;ABC Noticias&nbsp;-&nbsp;Prohibida la reproducción parcial o total de cualquiera de los contenidos en este sitio web. <a href="https://epsilonmedia.mx/" target="_blank" rel="noopener" title="Link a Epsilon Media Group">Epsilon Media Group</a></p>
+</div>
+<div class="col-otroslinks">
+<a href="/contacto/" title="Contacto">Contacto</a>
+<a href="/p/institucional/aviso-de-privacidad.html" title="Aviso de privacidad">Aviso de privacidad</a>
+<a href="/p/institucional/manual-de-politicas-procedimientos.html" title="Políticas">Políticas</a>
+<a href="/consultas/ventas.html" title="Formulario de contacto con departamento de ventas">Anúnciate con nosotros</a>
+<a href="https://mediakit.epsilonmedia.mx/" target="_blank" rel="noopener" title="Link a mediakit">Mediakit</a>
+<a href="/p/institucional/directorio.html">Directorio</a>
+<div class="e80 f">
+<a href="https://www.editor80.com/" title="Link Editor80">
+<div class="footer--logo-e80">
+<amp-img src="/u/plantillas/imgs/logo-editor80-b.svg" width="40" height="14" layout="responsive" alt="Logo Editor80"></amp-img>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>(function(){var js = "window['__CF$cv$params']={r:'7f31044dc9c1b6df',t:'MTY5MTQyNzAwNy45MTkwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
